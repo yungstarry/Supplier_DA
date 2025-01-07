@@ -1,0 +1,28 @@
+relationship 7f25164b-60da-bfdc-9edd-275303d8d0ed
+	fromColumn: 'Supplier Fact'.DefectTypeID
+	toColumn: 'Defect Type'.DefectTypeID
+
+relationship 30ab779f-0b4e-bdb6-3e70-8b3bd0be900c
+	fromColumn: 'Supplier Fact'.DefectID
+	toColumn: Defect.DefectID
+
+relationship bf174bcf-d7fe-3feb-a8f5-d56d73b2f31b
+	fromColumn: 'Supplier Fact'.PlantID
+	toColumn: Plant.PlantID
+
+relationship e0382325-84a6-5bc8-2cb4-c3812fc27c97
+	fromColumn: 'Supplier Fact'.VendorID
+	toColumn: Vendor.VendorID
+
+relationship 3f24ee9c-3403-3dc0-6959-0c9cb9e9b91e
+	fromColumn: 'Supplier Fact'.MaterialID
+	toColumn: 'Material Type'.MaterialID
+
+relationship ad09fd30-5ff4-9b2d-9b4a-be5b6b6f8257
+	fromColumn: 'Supplier Fact'.CategoryID
+	toColumn: Category.CategoryID
+
+relationship 80a3cfa8-7d41-4093-abfc-7996317c21b5
+	fromColumn: 'Supplier Fact'.Date
+	toColumn: Date.Date
+

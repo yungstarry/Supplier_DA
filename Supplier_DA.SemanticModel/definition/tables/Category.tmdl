@@ -1,0 +1,40 @@
+table Category
+	lineageTag: f07ae6bf-7311-47f2-a3d9-09f6c1011a13
+
+	column CategoryID
+		dataType: string
+		lineageTag: e9ce5a53-24c4-43d0-aa51-2cb5d90e764e
+		summarizeBy: none
+		sourceColumn: CategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 97bb5578-758a-42e5-84a0-5eacc32b145d
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Category = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\HP\OneDrive\Desktop\Supplier_DA\SUPPLIER INSIGHTS\supplier data.xlsx"), null, true),
+				    #"Supplier Quality_Sheet" = Source{[Item="Supplier Quality",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Supplier Quality_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type date}, {"Vendor", type text}, {"Plant Location", type text}, {"Category", type text}, {"Material Type", type text}, {"Defect Type", type text}, {"Defect", type text}, {"Total Defect Qty", Int64.Type}, {"Total Downtime Minutes", Int64.Type}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Changed Type",{"Category"}),
+				    #"Added Index" = Table.AddIndexColumn(#"Removed Other Columns", "Index", 1, 1, Int64.Type),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Added Index",{"Index", "Category"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Reordered Columns",{{"Index", "CategoryID"}}),
+				    #"Removed Duplicates" = Table.Distinct(#"Renamed Columns", {"Category"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Duplicates",{{"CategoryID", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

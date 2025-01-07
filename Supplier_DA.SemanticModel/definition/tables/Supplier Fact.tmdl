@@ -1,0 +1,105 @@
+table 'Supplier Fact'
+	lineageTag: 11623c9a-0880-4005-abf9-bbcbfd2e5092
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2b04d1dc-3035-4ed5-aec4-644ff7e8f5af
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Total Defect Qty'
+		dataType: int64
+		formatString: 0
+		lineageTag: b0106eae-4238-4f56-8bac-39cb109e3d68
+		summarizeBy: sum
+		sourceColumn: Total Defect Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Downtime Minutes'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e66914a-2e5a-43ac-836c-0e7343ccacb2
+		summarizeBy: sum
+		sourceColumn: Total Downtime Minutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column VendorID
+		dataType: string
+		lineageTag: fdb3dae8-c5f8-4562-8f5b-f1ed5660003a
+		summarizeBy: none
+		sourceColumn: VendorID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlantID
+		dataType: string
+		lineageTag: c38d8512-bc8d-4b66-a6c4-03b8d1c64ecc
+		summarizeBy: none
+		sourceColumn: PlantID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoryID
+		dataType: string
+		lineageTag: 2817d797-0128-4623-aca5-1a9353bb8b1a
+		summarizeBy: none
+		sourceColumn: CategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaterialID
+		dataType: string
+		lineageTag: d0d57826-1248-4180-a295-053c1dbd0ebe
+		summarizeBy: none
+		sourceColumn: MaterialID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DefectTypeID
+		dataType: string
+		lineageTag: 7c2272d6-af5d-42e9-b2f7-8582e0593a59
+		summarizeBy: none
+		sourceColumn: DefectTypeID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DefectID
+		dataType: string
+		lineageTag: aa2e5f3c-4cda-4ea7-bd92-7805d467f6ae
+		summarizeBy: none
+		sourceColumn: DefectID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Supplier Fact' = m
+		mode: import
+		source =
+				let
+				    Source = Table.NestedJoin(#"Supplier Quality", {"Vendor"}, Vendor, {"Vendor"}, "Vendor.1", JoinKind.Inner),
+				    #"Expanded Vendor.1" = Table.ExpandTableColumn(Source, "Vendor.1", {"VendorID"}, {"VendorID"}),
+				    #"Merged Queries" = Table.NestedJoin(#"Expanded Vendor.1", {"Plant Location"}, Plant, {"Plant Location"}, "Plant", JoinKind.Inner),
+				    #"Expanded Plant" = Table.ExpandTableColumn(#"Merged Queries", "Plant", {"PlantID"}, {"PlantID"}),
+				    #"Merged Queries1" = Table.NestedJoin(#"Expanded Plant", {"Category"}, Category, {"Category"}, "Category.1", JoinKind.Inner),
+				    #"Expanded Category.1" = Table.ExpandTableColumn(#"Merged Queries1", "Category.1", {"CategoryID"}, {"CategoryID"}),
+				    #"Merged Queries2" = Table.NestedJoin(#"Expanded Category.1", {"Material Type"}, #"Material Type", {"Material Type"}, "Material Type.1", JoinKind.Inner),
+				    #"Expanded Material Type.1" = Table.ExpandTableColumn(#"Merged Queries2", "Material Type.1", {"MaterialID"}, {"MaterialID"}),
+				    #"Merged Queries3" = Table.NestedJoin(#"Expanded Material Type.1", {"Defect Type"}, #"Defect Type", {"Defect Type"}, "Defect Type.1", JoinKind.Inner),
+				    #"Expanded Defect Type.1" = Table.ExpandTableColumn(#"Merged Queries3", "Defect Type.1", {"DefectTypeID"}, {"DefectTypeID"}),
+				    #"Merged Queries4" = Table.NestedJoin(#"Expanded Defect Type.1", {"Defect"}, Defect, {"Defect"}, "Defect.1", JoinKind.Inner),
+				    #"Expanded Defect.1" = Table.ExpandTableColumn(#"Merged Queries4", "Defect.1", {"DefectID"}, {"DefectID"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Expanded Defect.1",{{"VendorID", type text}, {"PlantID", type text}, {"CategoryID", type text}, {"MaterialID", type text}, {"DefectTypeID", type text}, {"DefectID", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Vendor", "Plant Location", "Category", "Material Type", "Defect Type", "Defect"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,40 @@
+table _Calculations
+	lineageTag: 7ce3379e-12e7-4f7d-98ec-6a7aee3db1f6
+
+	measure 'Total Defect Qty' = SUM('Supplier Fact'[Total Defect Qty])
+		formatString: 0
+		displayFolder: Defect Quantity
+		lineageTag: bbe68671-3073-4385-a619-13916eab3e48
+
+	measure 'Total Downtime Minutes' = SUM('Supplier Fact'[Total Downtime Minutes])
+		formatString: 0
+		displayFolder: Downtime
+		lineageTag: 695dca3b-5bb6-4074-b696-db0a37cd9645
+
+	measure 'Total Defect Report' = COUNTROWS('Supplier Fact')
+		formatString: 0
+		displayFolder: Defect Report
+		lineageTag: 87e30def-5711-4f7f-a16e-a2009ae386d7
+
+	column Column1
+		dataType: string
+		isHidden
+		lineageTag: 003217af-ee95-49ff-9762-fb13827a8b8c
+		summarizeBy: none
+		sourceColumn: Column1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Calculations = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

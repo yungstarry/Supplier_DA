@@ -1,0 +1,28 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBIDesktopVersion = 2.138.1452.0 (24.11)
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Supplier Quality","Vendor","Plant","Category","Material Type","Defect Type","Defect","Supplier Fact","_Calculations"]
+
+ref table Date
+ref table Vendor
+ref table Plant
+ref table Category
+ref table 'Material Type'
+ref table 'Defect Type'
+ref table Defect
+ref table 'Supplier Fact'
+ref table _Calculations
+
+ref cultureInfo en-US
+

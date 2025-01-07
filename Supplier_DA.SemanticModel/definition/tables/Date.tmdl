@@ -1,0 +1,168 @@
+table Date
+	lineageTag: 70c3b6a7-3f0c-4534-8e41-f25224a74fff
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: a6db6219-b7cc-498b-8161-923aa5d54171
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateAsInteger
+		lineageTag: ae7e980c-fc79-4051-b50a-729fdc1f8eed
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DateAsInteger]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 2b4af210-260f-4cd1-81df-786e03985367
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monthnumber
+		lineageTag: d4dce624-d0b7-4a45-a5d4-5b31b5251a6c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Monthnumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthnumber
+		lineageTag: 428c2241-14a1-4636-9d95-c30ae3d61b6c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [YearMonthnumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthShort
+		lineageTag: f5f70c99-a970-492e-95c4-64ce6df7b92f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [YearMonthShort]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNameShort
+		lineageTag: 9f0aa547-c56d-48b8-90e1-b7e2d57f6b6a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthNameShort]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNameLong
+		lineageTag: 23e5b6f6-758a-4130-85aa-44674bab2b88
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthNameLong]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		formatString: 0
+		lineageTag: 00b1564d-ebbb-4db2-8cb0-31fbbd32ce4d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekNumber
+		formatString: 0
+		lineageTag: abda3b83-e2fe-4b70-9324-35339a8f97a7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfWeekNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeek
+		lineageTag: b06ee346-bfad-4780-b05d-41489ed8af0b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfWeek]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekShort
+		lineageTag: 0dbbb709-3fd0-4015-a27c-1536f7bdcc3b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfWeekShort]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: edd8d4f0-23b1-4fd6-8c1f-0b91ab208ad1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearQuarter
+		lineageTag: bfc68811-0953-418c-a88a-4dd4e8927849
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [YearQuarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week of Year'
+		formatString: 0
+		lineageTag: 16878b04-c4e0-4b09-b236-5bd345e6fcf3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Week of Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Weekend'
+		lineageTag: ffc4114e-aa6b-49c0-8920-317f2d9088f4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Is Weekend]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Date = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				  CALENDARAUTO(),
+				    "DateAsInteger", FORMAT ( [Date], "YYYYMMDD" ),
+				    "Year", YEAR ( [Date] ),
+				    "Monthnumber", FORMAT ( [Date], "MM" ),
+				    "YearMonthnumber", FORMAT ( [Date], "YYYY/MM" ),
+				    "YearMonthShort", FORMAT ( [Date], "YYYY/mmm" ),
+				    "MonthNameShort", FORMAT ( [Date], "mmm" ),
+				    "MonthNameLong", FORMAT ( [Date], "mmmm" ),
+				    "Day", DAY([Date]),
+				    "DayOfWeekNumber", WEEKDAY ( [Date] ),    
+				    "DayOfWeek", FORMAT ( [Date], "dddd" ),
+				    "DayOfWeekShort", FORMAT ( [Date], "ddd" ),
+				    "Quarter", "Q" & FORMAT ( [Date], "Q" ),
+				    "YearQuarter",
+				        FORMAT ( [Date], "YYYY" ) & "/Q"
+				            & FORMAT ( [Date], "Q" ),
+				    "Week of Year", WEEKNUM( [Date]),
+				    "Is Weekend" , IF ( WEEKDAY([Date] ) IN {1, 7}, "Yes", "No" )
+				)
+				
+				
+				```
+
+	annotation PBI_Id = 3ec14405caef439fa66e51e56bfd7e6c
+
