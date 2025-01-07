@@ -1,0 +1,13 @@
+Date = ADDCOLUMNS(
+                  CALENDARAUTO(),
+                  "Year", YEAR([Date]),
+                  "Quarter", QUARTER([Date]),
+                  "Month", MONTH([Date]),
+                  "Month Name", FORMAT([Date], "mmmm"),
+                  "Month Name Short", FORMAT([Date], "mmm"),
+                  "Day", DAY([Date]),
+                  "Day of the Week", WEEKDAY([Date]),
+                  "Day of Week Name", FORMAT([Date], "dddd"),
+                  "Week of Year", WEEKNUM([Date]),
+                  "Is Weekend", IF(WEEKDAY([Date]) IN {1, 7}, TRUE, FALSE)
+)
