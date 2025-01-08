@@ -67,6 +67,34 @@ table _Calculations
 		displayFolder: Downtime
 		lineageTag: 8e4d8302-2ff0-4e00-a7c8-0c6a75e8f196
 
+	measure 'MOM Defect Quantity Trend Icon' =
+			
+			VAR PositiveIcon = UNICHAR(9650)
+			VAR NegativeIcon = UNICHAR(9660)
+			VAR Choice = IF([MOMGrowthDefectQty] > 0, PositiveIcon, NegativeIcon)
+			VAR Display = Choice & " " & FORMAT([MOMGrowthDefectQty], "0.00%")
+			RETURN Display
+		displayFolder: Defect Quantity
+		lineageTag: 88102928-7c29-4730-a704-ca0febf27ba3
+
+	measure 'MOM Defect Quantity Trend Colour' = IF([MOMGrowthDefectQty] > 0, "Red", "Green")
+		displayFolder: Defect Quantity
+		lineageTag: d3b1efb9-2d91-47ef-b4ca-97731b9e1b23
+
+	measure 'YOY Defect Quantity Trend Icon' =
+			
+			VAR PositiveIcon = UNICHAR(9650)
+			VAR NegativeIcon = UNICHAR(9660)
+			VAR Choice = IF([YOYGrowthDefectQty] > 0, PositiveIcon, NegativeIcon)
+			VAR Display = Choice & " " & FORMAT([YOYGrowthDefectQty], "0.00%")
+			RETURN Display
+		displayFolder: Defect Quantity
+		lineageTag: 18906f8b-9101-4416-9f29-f1df0a205ac2
+
+	measure 'YOY Defect Quantity Trend Colour' = IF([YOYGrowthDefectQty] > 0, "Red", "Green")
+		displayFolder: Defect Quantity
+		lineageTag: a6a25b3e-e91d-411c-bd72-e7ba02904b4d
+
 	column Column1
 		dataType: string
 		isHidden
