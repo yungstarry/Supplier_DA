@@ -2,7 +2,7 @@ table _Calculations
 	lineageTag: 7ce3379e-12e7-4f7d-98ec-6a7aee3db1f6
 
 	measure 'Total Defect Qty' = SUM('Supplier Fact'[Total Defect Qty])
-		formatString: 0
+		formatString: #,0
 		displayFolder: Defect Quantity
 		lineageTag: bbe68671-3073-4385-a619-13916eab3e48
 
@@ -15,6 +15,57 @@ table _Calculations
 		formatString: 0
 		displayFolder: Defect Report
 		lineageTag: 87e30def-5711-4f7f-a16e-a2009ae386d7
+
+	measure 'Defect Qty SPLY' = CALCULATE([Total Defect Qty], SAMEPERIODLASTYEAR('Date'[Date]))
+		formatString: #,0
+		displayFolder: Defect Quantity
+		lineageTag: 02a2c243-9548-4205-b190-76b5c5b10f18
+
+	measure 'Total Defect Qty PM' = CALCULATE([Total Defect Qty], PARALLELPERIOD('Date'[Date], -1, MONTH))
+		formatString: #,0
+		displayFolder: Defect Quantity
+		lineageTag: 426c0b8c-59e7-46e1-b569-d2bb502d7b36
+
+	measure YOYGrowthDefectQty = ```
+			DIVIDE([Total Defect Qty] - [Defect Qty SPLY], [Defect Qty SPLY], 0) 
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Defect Quantity
+		lineageTag: f8bb6dad-f6e9-4352-a1b0-93646c8caa2b
+
+	measure MOMGrowthDefectQty = ```
+			DIVIDE([Total Defect Qty] - [Total Defect Qty PM], [Total Defect Qty PM], 0) 
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Defect Quantity
+		lineageTag: a8df1bdb-ee8b-41b9-8cf0-cdaaa7ea51e5
+
+	measure 'Total Downtime Hours SPLY' = CALCULATE([Total Downtime Hours], SAMEPERIODLASTYEAR('Date'[Date]))
+		formatString: 0
+		displayFolder: Downtime
+		lineageTag: 9fa1e337-4d63-490a-b14f-12c7b06b2caa
+
+	measure 'Total Downtime Hours' = [Total Downtime Minutes]/60
+		displayFolder: Downtime
+		lineageTag: 4def1b95-b766-4317-828e-432b4cf6e79a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total DownTime Hours PM' = CALCULATE([Total Downtime Hours], PARALLELPERIOD('Date'[Date], -1,MONTH))
+		displayFolder: Downtime
+		lineageTag: 9ba9cecc-3799-4f2d-bd04-efc1843f7dde
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure YOYGrowthDowntimeHours = DIVIDE([Total Downtime Hours] - [Total Downtime Hours SPLY],[Total Downtime Hours SPLY], 0)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Downtime
+		lineageTag: 288e74a4-7b53-4d85-950b-e810f693899b
+
+	measure MOMGrowthDowntimeHours = DIVIDE([Total Downtime Hours] - [Total DownTime Hours PM], [Total DownTime Hours PM], 0)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Downtime
+		lineageTag: 8e4d8302-2ff0-4e00-a7c8-0c6a75e8f196
 
 	column Column1
 		dataType: string

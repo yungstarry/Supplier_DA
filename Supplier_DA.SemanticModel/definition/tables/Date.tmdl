@@ -58,6 +58,7 @@ table Date
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [MonthNameShort]
+		sortByColumn: Monthnumber
 
 		annotation SummarizationSetBy = Automatic
 
@@ -66,6 +67,7 @@ table Date
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [MonthNameLong]
+		sortByColumn: Monthnumber
 
 		annotation SummarizationSetBy = Automatic
 
