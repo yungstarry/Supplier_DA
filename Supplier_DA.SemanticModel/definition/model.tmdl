@@ -23,6 +23,8 @@ ref table 'Defect Type'
 ref table Defect
 ref table 'Supplier Fact'
 ref table _Calculations
+ref table 'Downtime Cost Parameter'
+ref table 'Overview Parameter'
 
 ref cultureInfo en-US
 

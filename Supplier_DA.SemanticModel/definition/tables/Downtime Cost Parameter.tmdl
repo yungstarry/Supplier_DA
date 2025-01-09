@@ -1,0 +1,26 @@
+table 'Downtime Cost Parameter'
+	lineageTag: 234715e9-2e29-49d9-937f-226c83461ae3
+
+	measure 'Downtime Cost Value' = SELECTEDVALUE('Downtime Cost Parameter'[Downtime Cost], 10)
+		formatString: 0
+		lineageTag: 14e8a505-6391-4648-bf7b-5c9d0954d260
+
+	column 'Downtime Cost'
+		formatString: 0
+		lineageTag: 26101b3f-f485-417c-b741-861075892494
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Downtime Cost Parameter' = calculated
+		mode: import
+		source = GENERATESERIES(0, 20, 1)
+
+	annotation PBI_Id = 5993e2dcbdc54e06a1d220e73cc7e74b
+

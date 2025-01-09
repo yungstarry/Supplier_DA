@@ -37,7 +37,7 @@
                       "Entity": "_Calculations"
                     }
                   },
-                  "Property": "MOMGrowthDefectQty"
+                  "Property": "MOMGrowthDowntimeCost"
                 }
               },
               "queryRef": "_Calculations.MOMGrowthDefectQty",

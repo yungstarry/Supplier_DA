@@ -33,11 +33,11 @@ table _Calculations
 		displayFolder: Defect Quantity
 		lineageTag: f8bb6dad-f6e9-4352-a1b0-93646c8caa2b
 
-	measure MOMGrowthDefectQty = ```
-			DIVIDE([Total Defect Qty] - [Total Defect Qty PM], [Total Defect Qty PM], 0) 
+	measure MOMGrowthDowntimeCost = ```
+			DIVIDE([Downtime Cost/Hr] - [Total Downtime Cost PM], [Total Downtime Cost PM], 0) 
 			```
 		formatString: 0.00%;-0.00%;0.00%
-		displayFolder: Defect Quantity
+		displayFolder: Downtime Cost
 		lineageTag: a8df1bdb-ee8b-41b9-8cf0-cdaaa7ea51e5
 
 	measure 'Total Downtime Hours SPLY' = CALCULATE([Total Downtime Hours], SAMEPERIODLASTYEAR('Date'[Date]))
@@ -94,6 +94,95 @@ table _Calculations
 	measure 'YOY Defect Quantity Trend Colour' = IF([YOYGrowthDefectQty] > 0, "Red", "Green")
 		displayFolder: Defect Quantity
 		lineageTag: a6a25b3e-e91d-411c-bd72-e7ba02904b4d
+
+	measure 'MOM Downtime Hour Trend Icon' =
+			
+			VAR PositiveIcon = UNICHAR(9650)
+			VAR NegativeIcon = UNICHAR(9660)
+			VAR Choice = IF([MOMGrowthDowntimeHours] > 0, PositiveIcon, NegativeIcon)
+			VAR Display = Choice & " " & FORMAT([MOMGrowthDowntimeHours], "0.00%")
+			RETURN Display
+		displayFolder: Downtime
+		lineageTag: c89fa038-b6a0-4eae-91e3-7438542011ca
+
+	measure 'YOY Downtime Hours Trend Icon' =
+			
+			VAR PositiveIcon = UNICHAR(9650)
+			VAR NegativeIcon = UNICHAR(9660)
+			VAR Choice = IF([YOYGrowthDowntimeHours] > 0, PositiveIcon, NegativeIcon)
+			VAR Display = Choice & " " & FORMAT([YOYGrowthDowntimeHours], "0.00%")
+			RETURN Display
+		displayFolder: Downtime
+		lineageTag: b0810fe6-b6a9-4d1c-a3f9-485565ad230f
+
+	measure 'Downtime Cost/Hr' = [Total Downtime Hours] * 'Downtime Cost Parameter'[Downtime Cost Value]
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: Downtime Cost
+		lineageTag: faf3f2c7-56b4-42ad-a228-b00bef9b88ac
+
+	measure 'MOM Downtime Hour Trend Colour' = IF([MOMGrowthDowntimeCost] > 0, "Red", "Green")
+		displayFolder: Downtime
+		lineageTag: fe3e1539-1f6c-4a0e-891f-1f40327c7f79
+
+	measure 'YOY Downtime Hour Trend Colour' = IF([YOYGrowthDefectQty] > 0, "Red", "Green")
+		displayFolder: Downtime
+		lineageTag: 263eec10-c655-4c91-bd45-db179ab463cd
+
+	measure 'Downtime Hour SPLY' = CALCULATE([Downtime Cost/Hr], SAMEPERIODLASTYEAR('Date'[Date]))
+		displayFolder: Downtime Cost
+		lineageTag: 8ae0d806-30cb-4181-ac6a-7870cd630e53
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Downtime Cost PM' = CALCULATE([Downtime Cost/Hr], PARALLELPERIOD('Date'[Date], -1, MONTH))
+		displayFolder: Downtime Cost
+		lineageTag: 66aa4972-1d37-424b-8a8e-75102c16e9f5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure YOYGrowthDowntimeCost = ```
+			DIVIDE([Downtime Cost/Hr] - [Downtime Hour SPLY], [Downtime Hour SPLY], 0) 
+			```
+		displayFolder: Downtime Cost
+		lineageTag: f0e5b034-1801-4645-9126-ec9b1be47e05
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MOMGrowthDefectQty = ```
+			DIVIDE([Total Defect Qty] - [Total Defect Qty PM], [Total Defect Qty PM], 0) 
+			```
+		displayFolder: Defect Quantity
+		lineageTag: aff87290-b527-4801-92e0-8994c90dd37e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'MOM Downtime Cost Trend Icon' =
+			
+			VAR PositiveIcon = UNICHAR(9650)
+			VAR NegativeIcon = UNICHAR(9660)
+			VAR Choice = IF([MOMGrowthDowntimeCost] > 0, PositiveIcon, NegativeIcon)
+			VAR Display = Choice & " " & FORMAT([MOMGrowthDowntimeCost], "0.00%")
+			RETURN Display
+		displayFolder: Downtime Cost
+		lineageTag: cd9ecdf7-dc92-4542-a458-cb8952c769d8
+
+	measure 'MOM Downtime Cost Trend Colour' = IF([MOMGrowthDowntimeCost] > 0, "Red", "Green")
+		displayFolder: Downtime Cost
+		lineageTag: 56b0ad82-00ca-4add-9588-e370194c1ba3
+
+	measure 'YOY Downtime Cost Trend Icon' =
+			
+			VAR PositiveIcon = UNICHAR(9650)
+			VAR NegativeIcon = UNICHAR(9660)
+			VAR Choice = IF([YOYGrowthDowntimeCost] > 0, PositiveIcon, NegativeIcon)
+			VAR Display = Choice & " " & FORMAT([YOYGrowthDowntimeCost], "0.00%")
+			RETURN Display
+		displayFolder: Downtime Cost
+		lineageTag: 603128ed-4048-4400-b911-d2d3947fd3c9
+
+	measure 'YOY Downtime Cost Trend Colour' = IF([YOYGrowthDowntimeCost] > 0, "Red", "Green")
+		displayFolder: Downtime Cost
+		lineageTag: cd94e6af-4ad6-49e8-818a-b727b99ccffe
 
 	column Column1
 		dataType: string

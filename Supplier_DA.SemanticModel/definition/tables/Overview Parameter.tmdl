@@ -1,0 +1,48 @@
+table 'Overview Parameter'
+	lineageTag: 12124c29-5d8f-48d9-a318-dc691239b103
+
+	column 'Overview Parameter'
+		lineageTag: d05a63d1-a592-4737-a11f-4553d18c1dfd
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Overview Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Overview Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview Parameter Fields'
+		isHidden
+		lineageTag: 8bcef4bf-a2f6-4c88-bb0e-8af2c8009942
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Overview Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview Parameter Order'
+		isHidden
+		formatString: 0
+		lineageTag: 725fc36b-ecf2-403c-8896-f93b43271177
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Overview Parameter' = calculated
+		mode: import
+		source =
+				{
+				    ("Total Defect Qty", NAMEOF('_Calculations'[Total Defect Qty]), 0),
+				    ("Total Downtime Hours", NAMEOF('_Calculations'[Total Downtime Hours]), 1)
+				}
+
+	annotation PBI_Id = 6283227832b844d398b56334aed54a9d
+
