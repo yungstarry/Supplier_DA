@@ -1,0 +1,17 @@
+table TopBottom
+	lineageTag: 9ca95651-85b6-4a20-ab0b-493e3d50def0
+
+	column Value
+		lineageTag: 45b45414-1feb-4fa8-8ff1-5322cfcbde3e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TopBottom = calculated
+		mode: import
+		source = {"Top","Bottom"}
+
+	annotation PBI_Id = a27c6668a0324cacb47ec535f7640c10
+

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "92e3254386eb2414fbaa",
+  "name": "2faa59da4930822b4a80",
   "position": {
-    "x": 962.63126178488812,
-    "y": 656.88237466710734,
-    "z": 1015,
+    "x": 625.82975331920773,
+    "y": 625.82975331920773,
+    "z": 3,
     "height": 365.46546663297244,
     "width": 403.684077522695,
-    "tabOrder": 1015
+    "tabOrder": 3
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -15,6 +15,20 @@
       "queryState": {
         "Values": {
           "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vendor"
+                    }
+                  },
+                  "Property": "Vendor"
+                }
+              },
+              "queryRef": "Vendor.Vendor",
+              "nativeQueryRef": "Vendor"
+            },
             {
               "field": {
                 "Measure": {
@@ -29,20 +43,6 @@
               "queryRef": "_Calculations.Total Defect Qty",
               "nativeQueryRef": "Total Defect Qty",
               "displayName": "Total Defect Qty"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Category"
-                    }
-                  },
-                  "Property": "Category"
-                }
-              },
-              "queryRef": "Category.Category",
-              "nativeQueryRef": "Category"
             }
           ],
           "fieldParameters": [
@@ -57,7 +57,7 @@
                   "Property": "Overview Parameter"
                 }
               },
-              "index": 0,
+              "index": 1,
               "length": 1
             }
           ]
@@ -67,16 +67,16 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "_Calculations"
+                    "Entity": "Vendor"
                   }
                 },
-                "Property": "Total Defect Qty"
+                "Property": "Vendor"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
@@ -96,7 +96,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'By Category'"
+                  "Value": "'By Vendor'"
                 }
               }
             },
@@ -120,10 +120,10 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Category"
+                "Entity": "Vendor"
               }
             },
-            "Property": "Category"
+            "Property": "Vendor"
           }
         },
         "type": "TopN",
@@ -138,8 +138,8 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "c",
-                        "Entity": "Category",
+                        "Name": "v",
+                        "Entity": "Vendor",
                         "Type": 0
                       },
                       {
@@ -153,10 +153,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "c"
+                              "Source": "v"
                             }
                           },
-                          "Property": "Category"
+                          "Property": "Vendor"
                         },
                         "Name": "field"
                       }
@@ -183,8 +183,8 @@
               "Type": 2
             },
             {
-              "Name": "c",
-              "Entity": "Category",
+              "Name": "v",
+              "Entity": "Vendor",
               "Type": 0
             }
           ],
@@ -197,10 +197,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "c"
+                            "Source": "v"
                           }
                         },
-                        "Property": "Category"
+                        "Property": "Vendor"
                       }
                     }
                   ],

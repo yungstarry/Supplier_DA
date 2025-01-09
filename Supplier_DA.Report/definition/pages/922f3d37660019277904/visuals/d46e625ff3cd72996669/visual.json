@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "6df994beeffc9fbd8b0e",
+  "name": "d46e625ff3cd72996669",
   "position": {
-    "x": 1452.307213809459,
-    "y": 222.14567579651265,
-    "z": 1016,
+    "x": 85.99187450187587,
+    "y": 678.3803432925763,
+    "z": 2,
     "height": 365.46546663297244,
     "width": 403.684077522695,
-    "tabOrder": 1016
+    "tabOrder": 2
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -35,14 +35,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Plant"
+                      "Entity": "Defect"
                     }
                   },
-                  "Property": "Plant Location"
+                  "Property": "Defect"
                 }
               },
-              "queryRef": "Plant.Plant Location",
-              "nativeQueryRef": "Plant Location"
+              "queryRef": "Defect.Defect",
+              "nativeQueryRef": "Defect"
             }
           ],
           "fieldParameters": [
@@ -96,7 +96,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'By Plant Location'"
+                  "Value": "'By Defect'"
                 }
               }
             },
@@ -120,10 +120,10 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Plant"
+                "Entity": "Defect"
               }
             },
-            "Property": "Plant Location"
+            "Property": "Defect"
           }
         },
         "type": "TopN",
@@ -138,8 +138,8 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "p",
-                        "Entity": "Plant",
+                        "Name": "d",
+                        "Entity": "Defect",
                         "Type": 0
                       },
                       {
@@ -153,10 +153,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "p"
+                              "Source": "d"
                             }
                           },
-                          "Property": "Plant Location"
+                          "Property": "Defect"
                         },
                         "Name": "field"
                       }
@@ -183,8 +183,8 @@
               "Type": 2
             },
             {
-              "Name": "p",
-              "Entity": "Plant",
+              "Name": "d",
+              "Entity": "Defect",
               "Type": 0
             }
           ],
@@ -197,10 +197,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "p"
+                            "Source": "d"
                           }
                         },
-                        "Property": "Plant Location"
+                        "Property": "Defect"
                       }
                     }
                   ],

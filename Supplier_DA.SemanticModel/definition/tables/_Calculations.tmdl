@@ -184,6 +184,95 @@ table _Calculations
 		displayFolder: Downtime Cost
 		lineageTag: cd94e6af-4ad6-49e8-818a-b727b99ccffe
 
+	measure 'Impact Defect Type' =
+			
+			VAR Impact = CALCULATE(COUNT('Supplier Fact'[DefectTypeID]), KEEPFILTERS('Defect Type'[Defect Type] = "Impact"))
+			VAR Defects = COUNT('Supplier Fact'[DefectTypeID])
+			RETURN
+			DIVIDE(Impact, Defects)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Defect Type
+		lineageTag: fa8d437b-c221-453d-890e-e6666555cc43
+
+	measure 'No Impact Defect Type' =
+			
+			VAR NoImpact = CALCULATE(COUNT('Supplier Fact'[DefectTypeID]), KEEPFILTERS('Defect Type'[Defect Type] = "No Impact"))
+			VAR Defects = COUNT('Supplier Fact'[DefectTypeID])
+			RETURN
+			DIVIDE(NoImpact, Defects)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Defect Type
+		lineageTag: 5f3a99be-bde4-4377-883e-75308b2f56ce
+
+	measure 'Reject Defect Type' =
+			
+			VAR Reject = CALCULATE(COUNT('Supplier Fact'[DefectTypeID]), KEEPFILTERS('Defect Type'[Defect Type] = "Rejected"))
+			VAR Defects = COUNT('Supplier Fact'[DefectTypeID])
+			RETURN
+			DIVIDE(Reject, Defects)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Defect Type
+		lineageTag: 666c38a6-3800-4ce5-ac23-4c11f77b8bcd
+
+	measure 'Rank Vendor by Defect Qty' =
+			
+			VAR topVendorDefectQty = IF(ISINSCOPE(Vendor[Vendor]),(RANKX(ALL(Vendor[Vendor]), [Total Defect Qty], ,DESC)))
+			VAR bottomVendorDefectQty = IF(ISINSCOPE(Vendor[Vendor]),(RANKX(ALL(Vendor[Vendor]), [Total Defect Qty], ,ASC)))
+			
+			VAR ranking = IF(SELECTEDVALUE(TopBottom[Value]) = "Top", topVendorDefectQty, bottomVendorDefectQty)
+			RETURN IF(ranking <= 'Top N Parameter'[Top N Parameter Value], [Total Defect Qty])
+		formatString: 0
+		displayFolder: Rank
+		lineageTag: 9fe973ea-0fa0-4e44-9fab-faec784d1e39
+
+	measure 'Rank Vendor by DownTime Hrs' =
+			
+			VAR topVendorDownTimeHrs = IF(ISINSCOPE(Vendor[Vendor]),(RANKX(ALL(Vendor[Vendor]), [Total Downtime Hours], ,DESC)))
+			VAR bottomVendorDownTimeHrs = IF(ISINSCOPE(Vendor[Vendor]),(RANKX(ALL(Vendor[Vendor]), [Total Downtime Hours], ,ASC)))
+			
+			VAR ranking = IF(SELECTEDVALUE(TopBottom[Value]) = "Top", topVendorDownTimeHrs, bottomVendorDownTimeHrs)
+			
+			RETURN IF(ranking <= 'Top N Parameter'[Top N Parameter Value], [Total Downtime Hours])
+		displayFolder: Rank
+		lineageTag: fadc2fc9-6cec-40fb-bd12-595c6acbaa4b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Risk Category' = ```
+			
+			VAR CurrentVendor = SELECTEDVALUE(Vendor[Vendor])
+			VAR TotalDowntimeHours  = CALCULATE([Total Downtime Hours], FILTER(Vendor,Vendor[Vendor] = CurrentVendor))
+			
+			RETURN IF([Total Downtime Hours] > 800, "High Risk", IF([Total Downtime Hours] <= 800 && [Total Downtime Hours] >= 400, "Medium Risk", "Low Risk"))
+			
+			```
+		displayFolder: Rank
+		lineageTag: 396fd6d3-ade6-43cf-80de-b6cdbc675134
+
+	measure 'Rank Plant by Defect Qty' =
+			
+			VAR topPlantDefectQty = IF(ISINSCOPE(Plant[Plant Location]),(RANKX(ALL(Plant[Plant Location]), [Total Defect Qty], ,DESC)))
+			VAR bottomPlantDefectQty = IF(ISINSCOPE(Plant[Plant Location]),(RANKX(ALL(Plant[Plant Location]), [Total Defect Qty], ,ASC)))
+			
+			VAR ranking = IF(SELECTEDVALUE(TopBottom[Value]) = "Top", topPlantDefectQty, bottomPlantDefectQty)
+			RETURN IF(ranking <= 'Top N Parameter'[Top N Parameter Value], [Total Defect Qty])
+		formatString: 0
+		displayFolder: Rank
+		lineageTag: b10fc0c6-5638-4a40-8615-c8e2fb41fa5a
+
+	measure 'Rank plant by DownTime Hrs' =
+			
+			VAR topPlantDownTimeHrs = IF(ISINSCOPE(Plant[Plant Location]),(RANKX(ALL(Plant[Plant Location]), [Total Downtime Hours], ,DESC)))
+			VAR bottomPlantDownTimeHrs = IF(ISINSCOPE(Plant[Plant Location]),(RANKX(ALL(Plant[Plant Location]), [Total Downtime Hours], ,ASC)))
+			
+			VAR ranking = IF(SELECTEDVALUE(TopBottom[Value]) = "Top", topPlantDownTimeHrs, bottomPlantDownTimeHrs)
+			
+			RETURN IF(ranking <= 'Top N Parameter'[Top N Parameter Value], [Total Downtime Hours])
+		displayFolder: Rank
+		lineageTag: af77f256-1f7a-4f48-97dd-9457b703d1ef
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column1
 		dataType: string
 		isHidden

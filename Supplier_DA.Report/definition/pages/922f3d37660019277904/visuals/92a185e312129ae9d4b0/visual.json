@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "92a185e312129ae9d4b0",
+  "position": {
+    "x": 1110.7283789825633,
+    "y": 678.3803432925763,
+    "z": 7,
+    "height": 148.09711719767509,
+    "width": 229.31166533833564,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Reject Defect Type"
+                }
+              },
+              "queryRef": "_Calculations.Reject Defect Type",
+              "nativeQueryRef": "Reject Defect Type"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Calculations"
+                  }
+                },
+                "Property": "Reject Defect Type"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

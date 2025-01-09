@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "72731af576a36eb17d71",
+  "position": {
+    "x": 1179.9996112201854,
+    "y": 16.720642264253641,
+    "z": 8,
+    "height": 1039.0684835643333,
+    "width": 711.82162782108355,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Defect Type"
+                    }
+                  },
+                  "Property": "Defect Type"
+                }
+              },
+              "queryRef": "Defect Type.Defect Type",
+              "nativeQueryRef": "Defect Type",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vendor"
+                    }
+                  },
+                  "Property": "Vendor"
+                }
+              },
+              "queryRef": "Vendor.Vendor",
+              "nativeQueryRef": "Vendor",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Total Defect Qty"
+                }
+              },
+              "queryRef": "_Calculations.Total Defect Qty",
+              "nativeQueryRef": "Total Defect Qty",
+              "displayName": "Total Defect Qty"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Overview Parameter"
+                    }
+                  },
+                  "Property": "Overview Parameter"
+                }
+              },
+              "index": 0,
+              "length": 1
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "29D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

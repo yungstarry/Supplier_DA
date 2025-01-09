@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "08cf9d26d87e760751ca",
+  "position": {
+    "x": 1110.7283789825633,
+    "y": 413.23873024512568,
+    "z": 5,
+    "height": 138.54246447524446,
+    "width": 205.425033532259,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Impact Defect Type"
+                }
+              },
+              "queryRef": "_Calculations.Impact Defect Type",
+              "nativeQueryRef": "Impact Defect Type"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Calculations"
+                  }
+                },
+                "Property": "Impact Defect Type"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

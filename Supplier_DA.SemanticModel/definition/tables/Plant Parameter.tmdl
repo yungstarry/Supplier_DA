@@ -1,0 +1,48 @@
+table 'Plant Parameter'
+	lineageTag: 0e8b57ee-ddbe-4296-97ce-9dd8f526cfb9
+
+	column 'Plant Parameter'
+		lineageTag: c1b7b4e2-91fe-499e-b8bb-7678d6d0d231
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Plant Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Plant Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Plant Parameter Fields'
+		isHidden
+		lineageTag: 4eca6350-b59c-4021-9cef-54e3e3c11047
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Plant Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Plant Parameter Order'
+		isHidden
+		formatString: 0
+		lineageTag: 5f1511b5-cd5b-496f-9bc2-3d9c0878144a
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Plant Parameter' = calculated
+		mode: import
+		source =
+				{
+				    ("Defect Qty", NAMEOF('_Calculations'[Rank Plant by Defect Qty]), 0),
+				    ("DownTime Hrs", NAMEOF('_Calculations'[Rank plant by DownTime Hrs]), 1)
+				}
+
+	annotation PBI_Id = 5e86307a0609419c8a3e34344d9dbecb
+

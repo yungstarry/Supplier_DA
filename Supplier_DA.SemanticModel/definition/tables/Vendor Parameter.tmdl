@@ -1,0 +1,48 @@
+table 'Vendor Parameter'
+	lineageTag: fb61101f-a22a-41b2-8cca-f4d86ee9ce43
+
+	column 'Vendor Parameter'
+		lineageTag: 16a2254a-7285-4df3-bb8f-6d75a414771b
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Vendor Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Vendor Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vendor Parameter Fields'
+		isHidden
+		lineageTag: f2887ad5-021c-4d8f-8ae7-5353ad005264
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Vendor Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vendor Parameter Order'
+		isHidden
+		formatString: 0
+		lineageTag: d546f285-ed7f-4bf3-9ed8-b948267af3b4
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Vendor Parameter' = calculated
+		mode: import
+		source =
+				{
+				    ("Defect Quantity", NAMEOF('_Calculations'[Rank Vendor by Defect Qty]), 0),
+				    ("DownTime Hours", NAMEOF('_Calculations'[Rank Vendor by DownTime Hrs]), 1)
+				}
+
+	annotation PBI_Id = cfa273c8bd684ce3b4236d0fd64c6e39
+

@@ -1,0 +1,175 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "f67156798a48ddf23ac2",
+  "position": {
+    "x": 212.591023074082,
+    "y": 668.82569057014564,
+    "z": 6,
+    "height": 410.850067064518,
+    "width": 563.72451062340849,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vendor"
+                    }
+                  },
+                  "Property": "Vendor"
+                }
+              },
+              "queryRef": "Vendor.Vendor",
+              "nativeQueryRef": "Vendor",
+              "active": true
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Total Defect Qty"
+                }
+              },
+              "queryRef": "_Calculations.Total Defect Qty",
+              "nativeQueryRef": "Total Defect Qty",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Total Downtime Hours"
+                }
+              },
+              "queryRef": "_Calculations.Total Downtime Hours",
+              "nativeQueryRef": "Total Downtime Hours"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e9741e91fe15870387c2",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Calculations"
+              }
+            },
+            "Property": "Total Defect Qty"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9b707c7b77bd938077c5",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Calculations"
+              }
+            },
+            "Property": "Total Downtime Hours"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a3829fd08b457dbc46d4",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Vendor"
+              }
+            },
+            "Property": "Vendor"
+          }
+        }
+      },
+      {
+        "name": "172599d1cfa0db8998a4",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Calculations"
+              }
+            },
+            "Property": "Risk Category"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Calculations",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Risk Category"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Low Risk'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

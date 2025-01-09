@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "44005a9435932911ffbc",
+  "position": {
+    "x": 64.4939058764069,
+    "y": 723.76494372412185,
+    "z": 8003,
+    "height": 332.02418210446513,
+    "width": 738.09692280776778,
+    "tabOrder": 8003
+  },
+  "visual": {
+    "visualType": "map",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Plant"
+                    }
+                  },
+                  "Property": "Plant Location"
+                }
+              },
+              "queryRef": "Plant.Plant Location",
+              "nativeQueryRef": "Plant Location",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Plant Parameter"
+                    }
+                  },
+                  "Property": "Plant Parameter"
+                }
+              },
+              "index": 0
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Rank plant by DownTime Hrs"
+                }
+              },
+              "queryRef": "_Calculations.Rank plant by DownTime Hrs",
+              "nativeQueryRef": "DownTime Hrs",
+              "displayName": "DownTime Hrs"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Plant Parameter"
+                    }
+                  },
+                  "Property": "Plant Parameter"
+                }
+              },
+              "index": 0,
+              "length": 1
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fillRule": {
+              "linearGradient2": {
+                "min": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'minColor'"
+                      }
+                    }
+                  }
+                },
+                "max": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'maxColor'"
+                      }
+                    }
+                  }
+                },
+                "nullColoringStrategy": {
+                  "strategy": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'asZero'"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

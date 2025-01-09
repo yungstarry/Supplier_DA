@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "1450ba535b85a8c19e23",
+  "name": "448f78190e6ef1a4b456",
   "position": {
-    "x": 960.24259860428049,
-    "y": 222.14567579651265,
-    "z": 1014,
-    "height": 365.46546663297244,
+    "x": 523.11723655307821,
+    "y": 102.7125167661295,
+    "z": 1,
+    "height": 367.85412981358007,
     "width": 403.684077522695,
-    "tabOrder": 1014
+    "tabOrder": 1
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -15,20 +15,6 @@
       "queryState": {
         "Values": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Vendor"
-                    }
-                  },
-                  "Property": "Vendor"
-                }
-              },
-              "queryRef": "Vendor.Vendor",
-              "nativeQueryRef": "Vendor"
-            },
             {
               "field": {
                 "Measure": {
@@ -43,6 +29,20 @@
               "queryRef": "_Calculations.Total Defect Qty",
               "nativeQueryRef": "Total Defect Qty",
               "displayName": "Total Defect Qty"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Plant"
+                    }
+                  },
+                  "Property": "Plant Location"
+                }
+              },
+              "queryRef": "Plant.Plant Location",
+              "nativeQueryRef": "Plant Location"
             }
           ],
           "fieldParameters": [
@@ -57,7 +57,7 @@
                   "Property": "Overview Parameter"
                 }
               },
-              "index": 1,
+              "index": 0,
               "length": 1
             }
           ]
@@ -67,16 +67,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Vendor"
+                    "Entity": "_Calculations"
                   }
                 },
-                "Property": "Vendor"
+                "Property": "Total Defect Qty"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ],
         "isDefaultSort": true
@@ -96,7 +96,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'By Vendor'"
+                  "Value": "'By Plant Location'"
                 }
               }
             },
@@ -120,10 +120,10 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Vendor"
+                "Entity": "Plant"
               }
             },
-            "Property": "Vendor"
+            "Property": "Plant Location"
           }
         },
         "type": "TopN",
@@ -138,8 +138,8 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "v",
-                        "Entity": "Vendor",
+                        "Name": "p",
+                        "Entity": "Plant",
                         "Type": 0
                       },
                       {
@@ -153,10 +153,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "v"
+                              "Source": "p"
                             }
                           },
-                          "Property": "Vendor"
+                          "Property": "Plant Location"
                         },
                         "Name": "field"
                       }
@@ -183,8 +183,8 @@
               "Type": 2
             },
             {
-              "Name": "v",
-              "Entity": "Vendor",
+              "Name": "p",
+              "Entity": "Plant",
               "Type": 0
             }
           ],
@@ -197,10 +197,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "v"
+                            "Source": "p"
                           }
                         },
-                        "Property": "Vendor"
+                        "Property": "Plant Location"
                       }
                     }
                   ],

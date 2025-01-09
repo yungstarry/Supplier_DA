@@ -12,6 +12,7 @@ table Plant
 	column 'Plant Location'
 		dataType: string
 		lineageTag: 94cf20c2-cdae-4564-bea3-3d2004562d93
+		dataCategory: City
 		summarizeBy: none
 		sourceColumn: Plant Location
 

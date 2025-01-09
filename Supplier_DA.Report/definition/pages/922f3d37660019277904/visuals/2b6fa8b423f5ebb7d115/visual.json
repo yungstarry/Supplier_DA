@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "039674dceebcdc30ed9d",
+  "name": "2b6fa8b423f5ebb7d115",
   "position": {
-    "x": 1402.1452870166981,
-    "y": 656.88237466710734,
-    "z": 1017,
+    "x": 114.65583266916782,
+    "y": 0,
+    "z": 0,
     "height": 365.46546663297244,
     "width": 403.684077522695,
-    "tabOrder": 1017
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -35,14 +35,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Defect"
+                      "Entity": "Category"
                     }
                   },
-                  "Property": "Defect"
+                  "Property": "Category"
                 }
               },
-              "queryRef": "Defect.Defect",
-              "nativeQueryRef": "Defect"
+              "queryRef": "Category.Category",
+              "nativeQueryRef": "Category"
             }
           ],
           "fieldParameters": [
@@ -96,7 +96,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'By Defect'"
+                  "Value": "'By Category'"
                 }
               }
             },
@@ -120,10 +120,10 @@
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Defect"
+                "Entity": "Category"
               }
             },
-            "Property": "Defect"
+            "Property": "Category"
           }
         },
         "type": "TopN",
@@ -138,8 +138,8 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "d",
-                        "Entity": "Defect",
+                        "Name": "c",
+                        "Entity": "Category",
                         "Type": 0
                       },
                       {
@@ -153,10 +153,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "d"
+                              "Source": "c"
                             }
                           },
-                          "Property": "Defect"
+                          "Property": "Category"
                         },
                         "Name": "field"
                       }
@@ -183,8 +183,8 @@
               "Type": 2
             },
             {
-              "Name": "d",
-              "Entity": "Defect",
+              "Name": "c",
+              "Entity": "Category",
               "Type": 0
             }
           ],
@@ -197,10 +197,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "d"
+                            "Source": "c"
                           }
                         },
-                        "Property": "Defect"
+                        "Property": "Category"
                       }
                     }
                   ],
