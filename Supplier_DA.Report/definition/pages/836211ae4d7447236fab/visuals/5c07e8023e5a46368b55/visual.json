@@ -4,10 +4,10 @@
   "position": {
     "x": 401.29541434208738,
     "y": 0,
-    "z": 8000,
+    "z": 3000,
     "height": 150.48578037828275,
     "width": 203.03637035165136,
-    "tabOrder": 8000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -68,7 +68,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''_Calculations''[Total Defect Qty]'"
+                                "Value": "'''_Calculations''[Total Downtime Hours]'"
                               }
                             }
                           ]
@@ -96,7 +96,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''_Calculations''[Total Defect Qty]'"
+                                      "Value": "'''_Calculations''[Total Downtime Hours]'"
                                     }
                                   }
                                 ]
@@ -120,7 +120,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Total Defect Qty"
+                            "0": "Total Downtime Hours"
                           }
                         ]
                       }

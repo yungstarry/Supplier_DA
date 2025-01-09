@@ -94,6 +94,7 @@ table Date
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [DayOfWeek]
+		sortByColumn: DayOfWeekNumber
 
 		annotation SummarizationSetBy = Automatic
 

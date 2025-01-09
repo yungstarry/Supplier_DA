@@ -116,6 +116,7 @@
   "filterConfig": {
     "filters": [
       {
+        "name": "b67a71458637cd2e7c72",
         "field": {
           "Column": {
             "Expression": {

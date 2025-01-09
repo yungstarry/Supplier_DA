@@ -41,7 +41,7 @@
             "numericStart": {
               "expr": {
                 "Literal": {
-                  "Value": "6D"
+                  "Value": "5D"
                 }
               }
             }
@@ -78,7 +78,7 @@
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "6D"
+                            "Value": "5D"
                           }
                         }
                       }

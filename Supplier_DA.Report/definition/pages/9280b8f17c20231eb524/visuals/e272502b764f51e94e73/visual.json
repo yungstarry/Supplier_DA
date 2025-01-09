@@ -1,0 +1,109 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "e272502b764f51e94e73",
+  "position": {
+    "x": 9.5546527224306512,
+    "y": 480.12129930214024,
+    "z": 2000,
+    "height": 542.22654199793942,
+    "width": 761.98355461384449,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vendor"
+                    }
+                  },
+                  "Property": "Vendor"
+                }
+              },
+              "queryRef": "Vendor.Vendor",
+              "nativeQueryRef": "Vendor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Plant"
+                    }
+                  },
+                  "Property": "Plant Location"
+                }
+              },
+              "queryRef": "Plant.Plant Location",
+              "nativeQueryRef": "Plant Location"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Total Defect Qty"
+                }
+              },
+              "queryRef": "_Calculations.Total Defect Qty",
+              "nativeQueryRef": "Total Defect Qty"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Total Downtime Hours"
+                }
+              },
+              "queryRef": "_Calculations.Total Downtime Hours",
+              "nativeQueryRef": "Total Downtime Hours"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Downtime Cost/Hr"
+                }
+              },
+              "queryRef": "_Calculations.Downtime Cost/Hr",
+              "nativeQueryRef": "Downtime Cost/Hr"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

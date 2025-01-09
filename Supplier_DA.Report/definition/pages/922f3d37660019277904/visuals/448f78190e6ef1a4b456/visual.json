@@ -4,10 +4,10 @@
   "position": {
     "x": 523.11723655307821,
     "y": 102.7125167661295,
-    "z": 1,
+    "z": 1000,
     "height": 367.85412981358007,
     "width": 403.684077522695,
-    "tabOrder": 1
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -116,6 +116,7 @@
   "filterConfig": {
     "filters": [
       {
+        "name": "28fa3165b9468c898b17",
         "field": {
           "Column": {
             "Expression": {

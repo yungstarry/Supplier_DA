@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "82050b36bf0c93ee040b",
+  "displayName": "Plant Tooltip",
+  "displayOption": "ActualSize",
+  "height": 370,
+  "width": 450
+}

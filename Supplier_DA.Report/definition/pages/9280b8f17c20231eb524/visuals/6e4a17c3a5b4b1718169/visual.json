@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "6e4a17c3a5b4b1718169",
+  "position": {
+    "x": 1239.716190735377,
+    "y": 0,
+    "z": 1000,
+    "height": 470.56664657970958,
+    "width": 599.55445833252338,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date"
+                    }
+                  },
+                  "Property": "MonthNameLong"
+                }
+              },
+              "queryRef": "Date.MonthNameLong",
+              "nativeQueryRef": "Month",
+              "active": true,
+              "displayName": "Month"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Downtime Cost/Hr"
+                }
+              },
+              "queryRef": "_Calculations.Downtime Cost/Hr",
+              "nativeQueryRef": "Downtime Cost/Hr"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

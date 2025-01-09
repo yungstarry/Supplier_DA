@@ -116,9 +116,11 @@ table _Calculations
 		lineageTag: b0810fe6-b6a9-4d1c-a3f9-485565ad230f
 
 	measure 'Downtime Cost/Hr' = [Total Downtime Hours] * 'Downtime Cost Parameter'[Downtime Cost Value]
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		displayFolder: Downtime Cost
 		lineageTag: faf3f2c7-56b4-42ad-a228-b00bef9b88ac
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure 'MOM Downtime Hour Trend Colour' = IF([MOMGrowthDowntimeCost] > 0, "Red", "Green")
 		displayFolder: Downtime

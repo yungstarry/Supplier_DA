@@ -4,10 +4,10 @@
   "position": {
     "x": 606.72044787434641,
     "y": 16.720642264253641,
-    "z": 2000,
+    "z": 1000,
     "height": 310.52621347899617,
     "width": 563.72451062340849,
-    "tabOrder": 2000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "tableEx",
@@ -37,12 +37,12 @@
                       "Entity": "_Calculations"
                     }
                   },
-                  "Property": "Rank plant by DownTime Hrs"
+                  "Property": "Rank Plant by Defect Qty"
                 }
               },
-              "queryRef": "_Calculations.Rank plant by DownTime Hrs",
-              "nativeQueryRef": "Rank plant by DownTime Hrs",
-              "displayName": "DownTime Hrs"
+              "queryRef": "_Calculations.Rank Plant by Defect Qty",
+              "nativeQueryRef": "Defect Qty",
+              "displayName": "Defect Qty"
             }
           ],
           "fieldParameters": [

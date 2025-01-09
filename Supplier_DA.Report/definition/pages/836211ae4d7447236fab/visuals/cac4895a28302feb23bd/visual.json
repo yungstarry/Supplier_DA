@@ -4,10 +4,10 @@
   "position": {
     "x": 64.4939058764069,
     "y": 475.34397294092491,
-    "z": 8001,
+    "z": 4000,
     "height": 248.42097078319694,
     "width": 379.79744571661837,
-    "tabOrder": 8001
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -81,7 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''_Calculations''[Rank plant by DownTime Hrs]'"
+                                "Value": "'''_Calculations''[Rank Plant by Defect Qty]'"
                               }
                             }
                           ]
@@ -109,7 +109,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''_Calculations''[Rank plant by DownTime Hrs]'"
+                                      "Value": "'''_Calculations''[Rank Plant by Defect Qty]'"
                                     }
                                   }
                                 ]
@@ -133,7 +133,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "DownTime Hrs"
+                            "0": "Defect Qty"
                           }
                         ]
                       }

@@ -4,10 +4,10 @@
   "position": {
     "x": 1179.9996112201854,
     "y": 16.720642264253641,
-    "z": 8002,
+    "z": 5000,
     "height": 1039.0684835643333,
     "width": 711.82162782108355,
-    "tabOrder": 8002
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -61,12 +61,12 @@
                       "Entity": "_Calculations"
                     }
                   },
-                  "Property": "Total Defect Qty"
+                  "Property": "Total Downtime Hours"
                 }
               },
-              "queryRef": "_Calculations.Total Defect Qty",
-              "nativeQueryRef": "Total Defect Qty",
-              "displayName": "Total Defect Qty"
+              "queryRef": "_Calculations.Total Downtime Hours",
+              "nativeQueryRef": "Total Downtime Hours",
+              "displayName": "Total Downtime Hours"
             }
           ],
           "fieldParameters": [
