@@ -4,5 +4,31 @@
   "displayName": "Plant Tooltip",
   "displayOption": "ActualSize",
   "height": 370,
-  "width": 450
+  "width": 450,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#FFF4B7'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
 }

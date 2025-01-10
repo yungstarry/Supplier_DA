@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "960e0d79bf6515ead408",
+  "name": "da32719fc1a49ffc19cd",
   "position": {
-    "x": 10,
+    "x": 157,
     "y": 0,
-    "z": 1000,
-    "height": 280,
-    "width": 280,
-    "tabOrder": 1000
+    "z": 2000,
+    "height": 94,
+    "width": 154,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "_Calculations"
                     }
                   },
-                  "Property": "YOYGrowthDefectQty"
+                  "Property": "Total Downtime Hours"
                 }
               },
-              "queryRef": "_Calculations.YOYGrowthDefectQty",
-              "nativeQueryRef": "YOYGrowthDefectQty"
+              "queryRef": "_Calculations.Total Downtime Hours",
+              "nativeQueryRef": "Total Downtime Hours"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Calculations"
                   }
                 },
-                "Property": "YOYGrowthDefectQty"
+                "Property": "Total Downtime Hours"
               }
             },
             "direction": "Descending"
@@ -50,36 +50,6 @@
         ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "labels": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   }

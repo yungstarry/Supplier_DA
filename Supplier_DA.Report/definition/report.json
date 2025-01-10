@@ -28,7 +28,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "false"
               }
             }
           }
@@ -45,6 +45,22 @@
           "name": "CY24SU10",
           "path": "BaseThemes/CY24SU10.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Supplier_Quality_&_Performance5851613974887189.png",
+          "path": "Supplier_Quality_&_Performance5851613974887189.png",
+          "type": "Image"
+        },
+        {
+          "name": "Presentation291069712014338.svg",
+          "path": "Presentation291069712014338.svg",
+          "type": "Image"
         }
       ]
     }

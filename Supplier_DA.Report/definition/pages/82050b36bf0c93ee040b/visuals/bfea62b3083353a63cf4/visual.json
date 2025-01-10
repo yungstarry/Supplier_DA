@@ -1,34 +1,20 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "6dd8af1eba59b0148c4b",
+  "name": "bfea62b3083353a63cf4",
   "position": {
-    "x": 807.36815504539,
-    "y": 482.50996248274788,
-    "z": 3000,
-    "height": 542.22654199793942,
-    "width": 761.98355461384449,
-    "tabOrder": 3000
+    "x": 225,
+    "y": 195,
+    "z": 5000,
+    "height": 175,
+    "width": 225,
+    "tabOrder": 5000
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "barChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Vendor"
-                    }
-                  },
-                  "Property": "Vendor"
-                }
-              },
-              "queryRef": "Vendor.Vendor",
-              "nativeQueryRef": "Vendor"
-            },
             {
               "field": {
                 "Column": {
@@ -41,7 +27,27 @@
                 }
               },
               "queryRef": "Material Type.Material Type",
-              "nativeQueryRef": "Material Type"
+              "nativeQueryRef": "Material Type",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Calculations"
+                    }
+                  },
+                  "Property": "Rank Plant by Defect Qty"
+                }
+              },
+              "queryRef": "_Calculations.Rank Plant by Defect Qty",
+              "nativeQueryRef": "Rank Plant by Defect Qty",
+              "displayName": "Defect Qty"
             },
             {
               "field": {
@@ -51,39 +57,28 @@
                       "Entity": "_Calculations"
                     }
                   },
-                  "Property": "Total Defect Qty"
+                  "Property": "Rank plant by DownTime Hrs"
                 }
               },
-              "queryRef": "_Calculations.Total Defect Qty",
-              "nativeQueryRef": "Total Defect Qty"
-            },
+              "queryRef": "_Calculations.Rank plant by DownTime Hrs",
+              "nativeQueryRef": "Rank plant by DownTime Hrs",
+              "displayName": "DownTime Hrs"
+            }
+          ],
+          "fieldParameters": [
             {
-              "field": {
-                "Measure": {
+              "parameterExpr": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_Calculations"
+                      "Entity": "Plant Parameter"
                     }
                   },
-                  "Property": "Total Downtime Hours"
+                  "Property": "Plant Parameter"
                 }
               },
-              "queryRef": "_Calculations.Total Downtime Hours",
-              "nativeQueryRef": "Total Downtime Hours"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Calculations"
-                    }
-                  },
-                  "Property": "Downtime Cost/Hr"
-                }
-              },
-              "queryRef": "_Calculations.Downtime Cost/Hr",
-              "nativeQueryRef": "Downtime Cost/Hr"
+              "index": 0,
+              "length": 2
             }
           ]
         }
@@ -98,28 +93,14 @@
                     "Entity": "_Calculations"
                   }
                 },
-                "Property": "Total Defect Qty"
+                "Property": "Rank Plant by Defect Qty"
               }
             },
             "direction": "Descending"
           }
-        ]
+        ],
+        "isDefaultSort": true
       }
-    },
-    "objects": {
-      "values": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "16D"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   }
