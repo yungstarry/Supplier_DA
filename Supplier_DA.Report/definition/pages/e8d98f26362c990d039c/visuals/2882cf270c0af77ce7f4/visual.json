@@ -4,7 +4,7 @@
   "position": {
     "x": 333.13060844095332,
     "y": 151.53454932765277,
-    "z": 3000,
+    "z": 4000,
     "height": 185.89056051125019,
     "width": 392.02662761283455,
     "tabOrder": 0
@@ -66,6 +66,27 @@
               "expr": {
                 "Literal": {
                   "Value": "2L"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

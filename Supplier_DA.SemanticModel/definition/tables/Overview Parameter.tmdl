@@ -40,8 +40,8 @@ table 'Overview Parameter'
 		mode: import
 		source =
 				{
-				    ("Total Defect Qty", NAMEOF('_Calculations'[Total Defect Qty]), 0),
-				    ("Total Downtime Hours", NAMEOF('_Calculations'[Total Downtime Hours]), 1)
+				    ("Defect Quantity", NAMEOF('_Calculations'[Total Defect Qty]), 0),
+				    ("Downtime Hours", NAMEOF('_Calculations'[Total Downtime Hours]), 1)
 				}
 
 	annotation PBI_Id = 6283227832b844d398b56334aed54a9d

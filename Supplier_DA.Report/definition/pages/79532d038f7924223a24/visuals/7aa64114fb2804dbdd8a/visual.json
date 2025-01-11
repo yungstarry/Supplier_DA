@@ -64,8 +64,8 @@
                 }
               },
               "queryRef": "_Calculations.Total Defect Qty",
-              "nativeQueryRef": "Total Defect Qty",
-              "displayName": "Total Defect Qty"
+              "nativeQueryRef": "Defect Quantity",
+              "displayName": "Defect Quantity"
             }
           ],
           "fieldParameters": [

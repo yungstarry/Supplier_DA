@@ -5,6 +5,11 @@
       "name": "CY24SU10",
       "reportVersionAtImport": "5.60",
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Custom5330008721269335.json",
+      "reportVersionAtImport": "5.60",
+      "type": "RegisteredResources"
     }
   },
   "layoutOptimization": "None",
@@ -61,6 +66,11 @@
           "name": "Presentation291069712014338.svg",
           "path": "Presentation291069712014338.svg",
           "type": "Image"
+        },
+        {
+          "name": "Custom5330008721269335.json",
+          "path": "Custom5330008721269335.json",
+          "type": "CustomTheme"
         }
       ]
     }

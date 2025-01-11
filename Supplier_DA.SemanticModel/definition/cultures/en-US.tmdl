@@ -7320,6 +7320,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.455
 			          }
+			        },
+			        {
+			          "DownTime Hrs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
