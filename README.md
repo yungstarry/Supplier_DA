@@ -143,7 +143,7 @@ The relationships between tables were structured as a star schema to optimize pe
 
 ---
 
-[check on Power Bi Service](https://app.powerbi.com/view?r=eyJrIjoiYTNhYmU5NmEtNTkyNS00NTJmLThkZDktYzY4ZjhmYTdiYjFlIiwidCI6IjhmNzg3ODg0LTA2MTctNDEzMi05MzFhLTQyYjljM2ViNjM3YiJ9)
+[check on Power Bi Service](https://app.powerbi.com/groups/me/reports/94691d07-bd05-46e3-b7d9-8b75cf4e629f/21a742f311e4f6eec909?experience=power-bi)
 
 
 <!-- markdown url -->
