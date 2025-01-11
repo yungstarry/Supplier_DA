@@ -12,6 +12,7 @@
 Enterprise Manufacturers Ltd operates across multiple plants and sources raw materials from several vendors. However, the organization faces challenges due to the lack of a centralized procurement system, leading to inconsistencies in supplier quality and plant operations.
 
 The management team has provided consolidated data on vendors, materials, and defects to address these issues. This project focuses on analyzing the data to uncover insights about supplier quality and operational inefficiencies, helping the organization adopt data-driven decisions.
+![Overview ](./image/landing.png)
 
 ---
 
