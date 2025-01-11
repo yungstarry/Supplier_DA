@@ -1497,6 +1497,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Plant": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Location"
@@ -1881,12 +1891,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "material": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "material identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1924,56 +1928,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "physical": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "substantial": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "solid": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "central": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        },
-			        {
-			          "substantive": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
 			          }
 			        }
 			      ]
@@ -2101,6 +2055,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Material": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -3359,12 +3323,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "material": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "material identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3402,56 +3360,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "physical": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "substantial": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "solid": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "central": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        },
-			        {
-			          "substantive": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
 			          }
 			        }
 			      ]
@@ -3833,6 +3741,26 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Defect Quantity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Defect": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4372,12 +4300,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime hours": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "aggregate downtime hour": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4408,16 +4330,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
 			          "total downtime eras": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4438,26 +4350,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime eras": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "downtime epoch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
 			          "total downtime age": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4468,13 +4360,23 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime age": {
-			            "Type": "Noun",
+			          "Downtime Hours": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.461
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Downtime Hr": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4635,12 +4537,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime hours": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "growth downtime hours": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -4687,16 +4583,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
 			          "growth downtime eras": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4717,26 +4603,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime eras": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "downtime epoch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
 			          "yoy growth downtime age": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4744,6 +4610,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "growth downtime age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
 			          }
 			        }
 			      ]
@@ -4767,12 +4643,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "downtime hours": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -4822,16 +4692,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
 			          "growth downtime eras": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4852,26 +4712,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "downtime eras": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "downtime epoch": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
 			          "mom growth downtime age": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4879,6 +4719,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "growth downtime age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
 			          }
 			        }
 			      ]
@@ -6875,6 +6725,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "Defect Quantity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -9861,421 +9721,1423 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
-			    "vendor_is_named_vendor_ID": {
+			    "supplier_fact_has_v_Calculations_calculation_impact_defect_type": {
 			      "Binding": {
-			        "ConceptualEntity": "Vendor"
+			        "ConceptualEntity": "Supplier Fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "vendor": {
+			        "supplier_fact": {
 			          "Target": {
-			            "Entity": "vendor"
+			            "Entity": "supplier_fact"
 			          }
 			        },
-			        "vendor.vendor_ID": {
+			        "v_Calculations_calculation.impact_defect_type": {
 			          "Target": {
-			            "Entity": "vendor.vendor_ID"
+			            "Entity": "v_Calculations_calculation.impact_defect_type"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "vendor"
-			            },
-			            "Name": {
-			              "Role": "vendor.vendor_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vendor_ID_are_names_IDs_of_vendors"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "vendor"
+			              "Role": "supplier_fact"
 			            },
 			            "Object": {
-			              "Role": "vendor.vendor_ID"
+			              "Role": "v_Calculations_calculation.impact_defect_type"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vendors_have_vendor_ID"
+			          "ID": "supplier_facts_have_impact_defect_type"
 			        }
 			      ]
 			    },
-			    "vendor_is_named_vendor": {
+			    "v_Calculations_calculation_has_YOY_downtime_cost_trend_colour": {
 			      "Binding": {
-			        "ConceptualEntity": "Vendor"
+			        "ConceptualEntity": "_Calculations"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "vendor": {
+			        "v_Calculations_calculation": {
 			          "Target": {
-			            "Entity": "vendor"
+			            "Entity": "v_Calculations_calculation"
 			          }
 			        },
-			        "vendor.vendor": {
+			        "v_Calculations_calculation.YOY_downtime_cost_trend_colour": {
 			          "Target": {
-			            "Entity": "vendor.vendor"
+			            "Entity": "v_Calculations_calculation.YOY_downtime_cost_trend_colour"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "vendor"
-			            },
-			            "Name": {
-			              "Role": "vendor.vendor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vendors_are_names_IDs_of_vendors"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "vendor"
+			              "Role": "v_Calculations_calculation"
 			            },
 			            "Object": {
-			              "Role": "vendor.vendor"
+			              "Role": "v_Calculations_calculation.YOY_downtime_cost_trend_colour"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vendors_have_vendors"
+			          "ID": "Phrasing_calculations_have_YOY_downtime_cost_trend_colour"
 			        }
 			      ]
 			    },
-			    "plant_is_named_plant_ID": {
+			    "v_Calculations_calculation_has_YOY_downtime_cost_trend_icon": {
 			      "Binding": {
-			        "ConceptualEntity": "Plant"
+			        "ConceptualEntity": "_Calculations"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "plant": {
+			        "v_Calculations_calculation": {
 			          "Target": {
-			            "Entity": "plant"
+			            "Entity": "v_Calculations_calculation"
 			          }
 			        },
-			        "plant.plant_ID": {
+			        "v_Calculations_calculation.YOY_downtime_cost_trend_icon": {
 			          "Target": {
-			            "Entity": "plant.plant_ID"
+			            "Entity": "v_Calculations_calculation.YOY_downtime_cost_trend_icon"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "plant"
-			            },
-			            "Name": {
-			              "Role": "plant.plant_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "plant_ID_are_names_IDs_of_plants"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "plant"
+			              "Role": "v_Calculations_calculation"
 			            },
 			            "Object": {
-			              "Role": "plant.plant_ID"
+			              "Role": "v_Calculations_calculation.YOY_downtime_cost_trend_icon"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "plants_have_plant_ID"
+			          "ID": "Phrasing_calculations_have_YOY_downtime_cost_trend_icon"
 			        }
 			      ]
 			    },
-			    "category_is_named_category_ID": {
+			    "v_Calculations_calculation_has_MOM_downtime_cost_trend_colour": {
 			      "Binding": {
-			        "ConceptualEntity": "Category"
+			        "ConceptualEntity": "_Calculations"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "category": {
+			        "v_Calculations_calculation": {
 			          "Target": {
-			            "Entity": "category"
+			            "Entity": "v_Calculations_calculation"
 			          }
 			        },
-			        "category.category_ID": {
+			        "v_Calculations_calculation.MOM_downtime_cost_trend_colour": {
 			          "Target": {
-			            "Entity": "category.category_ID"
+			            "Entity": "v_Calculations_calculation.MOM_downtime_cost_trend_colour"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "category"
-			            },
-			            "Name": {
-			              "Role": "category.category_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "category_ID_are_names_IDs_of_categories"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "category"
+			              "Role": "v_Calculations_calculation"
 			            },
 			            "Object": {
-			              "Role": "category.category_ID"
+			              "Role": "v_Calculations_calculation.MOM_downtime_cost_trend_colour"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "categories_have_category_ID"
+			          "ID": "Phrasing_calculations_have_MOM_downtime_cost_trend_colour"
 			        }
 			      ]
 			    },
-			    "category_is_named_category": {
+			    "v_Calculations_calculation_has_MOM_downtime_cost_trend_icon": {
 			      "Binding": {
-			        "ConceptualEntity": "Category"
+			        "ConceptualEntity": "_Calculations"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "category": {
+			        "v_Calculations_calculation": {
 			          "Target": {
-			            "Entity": "category"
+			            "Entity": "v_Calculations_calculation"
 			          }
 			        },
-			        "category.category": {
+			        "v_Calculations_calculation.MOM_downtime_cost_trend_icon": {
 			          "Target": {
-			            "Entity": "category.category"
+			            "Entity": "v_Calculations_calculation.MOM_downtime_cost_trend_icon"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "category"
-			            },
-			            "Name": {
-			              "Role": "category.category"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "categories_are_names_IDs_of_categories"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "category"
+			              "Role": "v_Calculations_calculation"
 			            },
 			            "Object": {
-			              "Role": "category.category"
+			              "Role": "v_Calculations_calculation.MOM_downtime_cost_trend_icon"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "categories_have_categories"
+			          "ID": "Phrasing_calculations_have_MOM_downtime_cost_trend_icon"
 			        }
 			      ]
 			    },
-			    "material_type_is_named_material_type": {
+			    "supplier_fact_has_v_Calculations_calculation_MOM_growth_defect_qty": {
 			      "Binding": {
-			        "ConceptualEntity": "Material Type"
+			        "ConceptualEntity": "Supplier Fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "material_type": {
+			        "supplier_fact": {
 			          "Target": {
-			            "Entity": "material_type"
+			            "Entity": "supplier_fact"
 			          }
 			        },
-			        "material_type.material_type": {
+			        "v_Calculations_calculation.MOM_growth_defect_qty": {
 			          "Target": {
-			            "Entity": "material_type.material_type"
+			            "Entity": "v_Calculations_calculation.MOM_growth_defect_qty"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "material_type"
-			            },
-			            "Name": {
-			              "Role": "material_type.material_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "material_types_are_names_IDs_of_material_types"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "material_type"
+			              "Role": "supplier_fact"
 			            },
 			            "Object": {
-			              "Role": "material_type.material_type"
+			              "Role": "v_Calculations_calculation.MOM_growth_defect_qty"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "material_types_have_material_types"
+			          "ID": "supplier_facts_have_MOM_growth_defect_qty"
 			        }
 			      ]
 			    },
-			    "defect_type_is_named_defect_type_ID": {
+			    "supplier_fact_has_v_Calculations_calculation_YOY_growth_downtime_cost": {
 			      "Binding": {
-			        "ConceptualEntity": "Defect Type"
+			        "ConceptualEntity": "Supplier Fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "defect_type": {
+			        "supplier_fact": {
 			          "Target": {
-			            "Entity": "defect_type"
+			            "Entity": "supplier_fact"
 			          }
 			        },
-			        "defect_type.defect_type_ID": {
+			        "v_Calculations_calculation.YOY_growth_downtime_cost": {
 			          "Target": {
-			            "Entity": "defect_type.defect_type_ID"
+			            "Entity": "v_Calculations_calculation.YOY_growth_downtime_cost"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "defect_type"
-			            },
-			            "Name": {
-			              "Role": "defect_type.defect_type_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defect_type_ID_are_names_IDs_of_defect_types"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "defect_type"
+			              "Role": "supplier_fact"
 			            },
 			            "Object": {
-			              "Role": "defect_type.defect_type_ID"
+			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "defect_types_have_defect_type_ID"
+			          "ID": "supplier_facts_have_YOY_growth_downtime_cost"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "YOY_growth_downtime_cost_indicates_how_expensive_supplier_facts_are"
 			        }
 			      ]
 			    },
-			    "defect_type_is_named_defect_type": {
+			    "downtime_cost_parameter_has_v_Calculations_calculation_YOY_growth_downtime_cost": {
 			      "Binding": {
-			        "ConceptualEntity": "Defect Type"
+			        "ConceptualEntity": "Downtime Cost Parameter"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "defect_type": {
+			        "downtime_cost_parameter": {
 			          "Target": {
-			            "Entity": "defect_type"
+			            "Entity": "downtime_cost_parameter"
 			          }
 			        },
-			        "defect_type.defect_type": {
+			        "v_Calculations_calculation.YOY_growth_downtime_cost": {
 			          "Target": {
-			            "Entity": "defect_type.defect_type"
+			            "Entity": "v_Calculations_calculation.YOY_growth_downtime_cost"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "defect_type"
-			            },
-			            "Name": {
-			              "Role": "defect_type.defect_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defect_types_are_names_IDs_of_defect_types"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "defect_type"
+			              "Role": "downtime_cost_parameter"
 			            },
 			            "Object": {
-			              "Role": "defect_type.defect_type"
+			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "defect_types_have_defect_types"
+			          "ID": "downtime_cost_parameters_have_YOY_growth_downtime_cost"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "YOY_growth_downtime_cost_indicates_how_expensive_downtime_cost_parameters_are"
 			        }
 			      ]
 			    },
-			    "defect_is_named_defect_ID": {
+			    "supplier_fact_has_v_Calculations_calculation_total_downtime_cost_PM": {
 			      "Binding": {
-			        "ConceptualEntity": "Defect"
+			        "ConceptualEntity": "Supplier Fact"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "defect": {
+			        "supplier_fact": {
 			          "Target": {
-			            "Entity": "defect"
+			            "Entity": "supplier_fact"
 			          }
 			        },
-			        "defect.defect_ID": {
+			        "v_Calculations_calculation.total_downtime_cost_PM": {
 			          "Target": {
-			            "Entity": "defect.defect_ID"
+			            "Entity": "v_Calculations_calculation.total_downtime_cost_PM"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "defect"
-			            },
-			            "Name": {
-			              "Role": "defect.defect_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defect_ID_are_names_IDs_of_defects"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "defect"
+			              "Role": "supplier_fact"
 			            },
 			            "Object": {
-			              "Role": "defect.defect_ID"
+			              "Role": "v_Calculations_calculation.total_downtime_cost_PM"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "defects_have_defect_ID"
+			          "ID": "supplier_facts_have_total_downtime_cost_PM"
 			        }
 			      ]
 			    },
-			    "defect_is_named_defect": {
+			    "downtime_cost_parameter_has_v_Calculations_calculation_total_downtime_cost_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "Downtime Cost Parameter"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "downtime_cost_parameter": {
+			          "Target": {
+			            "Entity": "downtime_cost_parameter"
+			          }
+			        },
+			        "v_Calculations_calculation.total_downtime_cost_PM": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_downtime_cost_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_downtime_cost_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_parameters_have_total_downtime_cost_PM"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_downtime_hour_SPLY": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.downtime_hour_SPLY": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.downtime_hour_SPLY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.downtime_hour_SPLY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_downtime_hour_SPLY"
+			        }
+			      ]
+			    },
+			    "downtime_cost_parameter_has_v_Calculations_calculation_downtime_hour_SPLY": {
+			      "Binding": {
+			        "ConceptualEntity": "Downtime Cost Parameter"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "downtime_cost_parameter": {
+			          "Target": {
+			            "Entity": "downtime_cost_parameter"
+			          }
+			        },
+			        "v_Calculations_calculation.downtime_hour_SPLY": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.downtime_hour_SPLY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.downtime_hour_SPLY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_parameters_have_downtime_hour_SPLY"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_YOY_downtime_hour_trend_colour": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.YOY_downtime_hour_trend_colour": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.YOY_downtime_hour_trend_colour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.YOY_downtime_hour_trend_colour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_YOY_downtime_hour_trend_colour"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_MOM_downtime_hour_trend_colour": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_downtime_hour_trend_colour": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_downtime_hour_trend_colour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_downtime_hour_trend_colour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_MOM_downtime_hour_trend_colour"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_downtime_cost_hr": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.downtime_cost_hr": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.downtime_cost_hr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.downtime_cost_hr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_downtime_cost_hr"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "v_Calculations_calculation.downtime_cost_hr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_hr_indicates_how_expensive_supplier_facts_are"
+			        }
+			      ]
+			    },
+			    "downtime_cost_parameter_has_v_Calculations_calculation_downtime_cost_hr": {
+			      "Binding": {
+			        "ConceptualEntity": "Downtime Cost Parameter"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "downtime_cost_parameter": {
+			          "Target": {
+			            "Entity": "downtime_cost_parameter"
+			          }
+			        },
+			        "v_Calculations_calculation.downtime_cost_hr": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.downtime_cost_hr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.downtime_cost_hr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_parameters_have_downtime_cost_hr"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "v_Calculations_calculation.downtime_cost_hr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_hr_indicates_how_expensive_downtime_cost_parameters_are"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_YOY_downtime_hours_trend_icon": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.YOY_downtime_hours_trend_icon": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.YOY_downtime_hours_trend_icon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.YOY_downtime_hours_trend_icon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_YOY_downtime_hours_trend_icon"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_MOM_downtime_hour_trend_icon": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_downtime_hour_trend_icon": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_downtime_hour_trend_icon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_downtime_hour_trend_icon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_MOM_downtime_hour_trend_icon"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_YOY_defect_quantity_trend_colour": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.YOY_defect_quantity_trend_colour": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.YOY_defect_quantity_trend_colour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.YOY_defect_quantity_trend_colour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_YOY_defect_quantity_trend_colour"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_YOY_defect_quantity_trend_icon": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.YOY_defect_quantity_trend_icon": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.YOY_defect_quantity_trend_icon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.YOY_defect_quantity_trend_icon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_YOY_defect_quantity_trend_icon"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_MOM_defect_quantity_trend_colour": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_defect_quantity_trend_colour": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_defect_quantity_trend_colour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_defect_quantity_trend_colour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_MOM_defect_quantity_trend_colour"
+			        }
+			      ]
+			    },
+			    "v_Calculations_calculation_has_MOM_defect_quantity_trend_icon": {
+			      "Binding": {
+			        "ConceptualEntity": "_Calculations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Calculations_calculation": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_defect_quantity_trend_icon": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_defect_quantity_trend_icon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Calculations_calculation"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_defect_quantity_trend_icon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_calculations_have_MOM_defect_quantity_trend_icon"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_MOM_growth_downtime_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_growth_downtime_hours": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_growth_downtime_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_growth_downtime_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_MOM_growth_downtime_hours"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_YOY_growth_downtime_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.YOY_growth_downtime_hours": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.YOY_growth_downtime_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.YOY_growth_downtime_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_YOY_growth_downtime_hours"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_DownTime_hours_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_DownTime_hours_PM": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_DownTime_hours_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_DownTime_hours_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_DownTime_hours_PM"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_downtime_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_downtime_hours": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_downtime_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_downtime_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_downtime_hours"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_downtime_hours_SPLY": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_downtime_hours_SPLY": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_downtime_hours_SPLY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_downtime_hours_SPLY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_downtime_hours_SPLY"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_MOM_growth_downtime_cost": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_growth_downtime_cost": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_MOM_growth_downtime_cost"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "MOM_growth_downtime_cost_indicates_how_expensive_supplier_facts_are"
+			        }
+			      ]
+			    },
+			    "downtime_cost_parameter_has_v_Calculations_calculation_MOM_growth_downtime_cost": {
+			      "Binding": {
+			        "ConceptualEntity": "Downtime Cost Parameter"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "downtime_cost_parameter": {
+			          "Target": {
+			            "Entity": "downtime_cost_parameter"
+			          }
+			        },
+			        "v_Calculations_calculation.MOM_growth_downtime_cost": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_parameters_have_MOM_growth_downtime_cost"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "MOM_growth_downtime_cost_indicates_how_expensive_downtime_cost_parameters_are"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_YOY_growth_defect_qty": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.YOY_growth_defect_qty": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.YOY_growth_defect_qty"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.YOY_growth_defect_qty"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_YOY_growth_defect_qty"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_defect_qty_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_defect_qty_PM": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_defect_qty_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_defect_qty_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_defect_qty_PM"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_defect_qty_SPLY": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.defect_qty_SPLY": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.defect_qty_SPLY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.defect_qty_SPLY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_defect_qty_SPLY"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_defect_report": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_defect_report": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_defect_report"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_defect_report"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_defect_report"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_downtime_minute": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_downtime_minute": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_downtime_minute"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_downtime_minute"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_downtime_minute"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_v_Calculations_calculation_total_defect_qty": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "v_Calculations_calculation.total_defect_qty": {
+			          "Target": {
+			            "Entity": "v_Calculations_calculation.total_defect_qty"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "v_Calculations_calculation.total_defect_qty"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_defect_qty"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_total_downtime_minute": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "supplier_fact.total_downtime_minute": {
+			          "Target": {
+			            "Entity": "supplier_fact.total_downtime_minute"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "supplier_fact.total_downtime_minute"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_downtime_minutes"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_total_defect_qty": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "supplier_fact.total_defect_qty": {
+			          "Target": {
+			            "Entity": "supplier_fact.total_defect_qty"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "supplier_fact.total_defect_qty"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_total_defect_qties"
+			        }
+			      ]
+			    },
+			    "supplier_fact_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Supplier Fact"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "supplier_fact": {
+			          "Target": {
+			            "Entity": "supplier_fact"
+			          }
+			        },
+			        "supplier_fact.date": {
+			          "Target": {
+			            "Entity": "supplier_fact.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "supplier_fact"
+			            },
+			            "Object": {
+			              "Role": "supplier_fact.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "supplier_facts_have_dates"
+			        }
+			      ]
+			    },
+			    "defect_has_defect": {
 			      "Binding": {
 			        "ConceptualEntity": "Defect"
 			      },
@@ -10294,19 +11156,6 @@ cultureInfo en-US
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "defect"
-			            },
-			            "Name": {
-			              "Role": "defect.defect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "defects_are_names_IDs_of_defects"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "defect"
@@ -10318,144 +11167,1183 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "defects_have_defects"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "defect"
+			            },
+			            "Name": {
+			              "Role": "defect.defect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defects_are_names_IDs_of_defects"
 			        }
 			      ]
 			    },
-			    "overview_parameter_is_named_overview_parameter": {
+			    "defect_has_defect_ID": {
 			      "Binding": {
-			        "ConceptualEntity": "Overview Parameter"
+			        "ConceptualEntity": "Defect"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "overview_parameter": {
+			        "defect": {
 			          "Target": {
-			            "Entity": "overview_parameter"
+			            "Entity": "defect"
 			          }
 			        },
-			        "overview_parameter.overview_parameter": {
+			        "defect.defect_ID": {
 			          "Target": {
-			            "Entity": "overview_parameter.overview_parameter"
+			            "Entity": "defect.defect_ID"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "overview_parameter"
-			            },
-			            "Name": {
-			              "Role": "overview_parameter.overview_parameter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "overview_parameters_are_names_IDs_of_overview_parameters"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "overview_parameter"
+			              "Role": "defect"
 			            },
 			            "Object": {
-			              "Role": "overview_parameter.overview_parameter"
+			              "Role": "defect.defect_ID"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "overview_parameters_have_overview_parameters"
+			          "ID": "defects_have_defect_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "defect"
+			            },
+			            "Name": {
+			              "Role": "defect.defect_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defect_ID_are_names_IDs_of_defects"
 			        }
 			      ]
 			    },
-			    "vendor_parameter_is_named_vendor_parameter": {
+			    "defect_type_has_defect_type": {
 			      "Binding": {
-			        "ConceptualEntity": "Vendor Parameter"
+			        "ConceptualEntity": "Defect Type"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "vendor_parameter": {
+			        "defect_type": {
 			          "Target": {
-			            "Entity": "vendor_parameter"
+			            "Entity": "defect_type"
 			          }
 			        },
-			        "vendor_parameter.vendor_parameter": {
+			        "defect_type.defect_type": {
 			          "Target": {
-			            "Entity": "vendor_parameter.vendor_parameter"
+			            "Entity": "defect_type.defect_type"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "vendor_parameter"
-			            },
-			            "Name": {
-			              "Role": "vendor_parameter.vendor_parameter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vendor_parameters_are_names_IDs_of_vendor_parameters"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "vendor_parameter"
+			              "Role": "defect_type"
 			            },
 			            "Object": {
-			              "Role": "vendor_parameter.vendor_parameter"
+			              "Role": "defect_type.defect_type"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vendor_parameters_have_vendor_parameters"
+			          "ID": "defect_types_have_defect_types"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "defect_type"
+			            },
+			            "Name": {
+			              "Role": "defect_type.defect_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defect_types_are_names_IDs_of_defect_types"
 			        }
 			      ]
 			    },
-			    "plant_parameter_is_named_plant_parameter": {
+			    "defect_type_has_defect_type_ID": {
 			      "Binding": {
-			        "ConceptualEntity": "Plant Parameter"
+			        "ConceptualEntity": "Defect Type"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "plant_parameter": {
+			        "defect_type": {
 			          "Target": {
-			            "Entity": "plant_parameter"
+			            "Entity": "defect_type"
 			          }
 			        },
-			        "plant_parameter.plant_parameter": {
+			        "defect_type.defect_type_ID": {
 			          "Target": {
-			            "Entity": "plant_parameter.plant_parameter"
+			            "Entity": "defect_type.defect_type_ID"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
+			          "Attribute": {
 			            "Subject": {
-			              "Role": "plant_parameter"
+			              "Role": "defect_type"
 			            },
-			            "Name": {
-			              "Role": "plant_parameter.plant_parameter"
+			            "Object": {
+			              "Role": "defect_type.defect_type_ID"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "plant_parameters_are_names_IDs_of_plant_parameters"
+			          "ID": "defect_types_have_defect_type_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "defect_type"
+			            },
+			            "Name": {
+			              "Role": "defect_type.defect_type_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "defect_type_ID_are_names_IDs_of_defect_types"
+			        }
+			      ]
+			    },
+			    "material_type_has_material_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Material Type"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "material_type": {
+			          "Target": {
+			            "Entity": "material_type"
+			          }
+			        },
+			        "material_type.material_type": {
+			          "Target": {
+			            "Entity": "material_type.material_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "material_type"
+			            },
+			            "Object": {
+			              "Role": "material_type.material_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "material_types_have_material_types"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "material_type"
+			            },
+			            "Name": {
+			              "Role": "material_type.material_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "material_types_are_names_IDs_of_material_types"
+			        }
+			      ]
+			    },
+			    "material_type_has_material_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Material Type"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "material_type": {
+			          "Target": {
+			            "Entity": "material_type"
+			          }
+			        },
+			        "material_type.material_ID": {
+			          "Target": {
+			            "Entity": "material_type.material_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "material_type"
+			            },
+			            "Object": {
+			              "Role": "material_type.material_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "material_types_have_material_ID"
+			        }
+			      ]
+			    },
+			    "category_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "Category"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "category": {
+			          "Target": {
+			            "Entity": "category"
+			          }
+			        },
+			        "category.category": {
+			          "Target": {
+			            "Entity": "category.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "category"
+			            },
+			            "Object": {
+			              "Role": "category.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "categories_have_categories"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "category"
+			            },
+			            "Name": {
+			              "Role": "category.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "categories_are_names_IDs_of_categories"
+			        }
+			      ]
+			    },
+			    "category_has_category_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Category"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "category": {
+			          "Target": {
+			            "Entity": "category"
+			          }
+			        },
+			        "category.category_ID": {
+			          "Target": {
+			            "Entity": "category.category_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "category"
+			            },
+			            "Object": {
+			              "Role": "category.category_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "categories_have_category_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "category"
+			            },
+			            "Name": {
+			              "Role": "category.category_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "category_ID_are_names_IDs_of_categories"
+			        }
+			      ]
+			    },
+			    "plant_has_plant_location": {
+			      "Binding": {
+			        "ConceptualEntity": "Plant"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "plant": {
+			          "Target": {
+			            "Entity": "plant"
+			          }
+			        },
+			        "plant.plant_location": {
+			          "Target": {
+			            "Entity": "plant.plant_location"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "plant"
+			            },
+			            "Object": {
+			              "Role": "plant.plant_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "plants_have_plant_locations"
+			        }
+			      ]
+			    },
+			    "plant_has_plant_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Plant"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "plant": {
+			          "Target": {
+			            "Entity": "plant"
+			          }
+			        },
+			        "plant.plant_ID": {
+			          "Target": {
+			            "Entity": "plant.plant_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "plant"
+			            },
+			            "Object": {
+			              "Role": "plant.plant_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "plants_have_plant_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "plant"
+			            },
+			            "Name": {
+			              "Role": "plant.plant_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "plant_ID_are_names_IDs_of_plants"
+			        }
+			      ]
+			    },
+			    "vendor_has_vendor": {
+			      "Binding": {
+			        "ConceptualEntity": "Vendor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vendor": {
+			          "Target": {
+			            "Entity": "vendor"
+			          }
+			        },
+			        "vendor.vendor": {
+			          "Target": {
+			            "Entity": "vendor.vendor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vendor"
+			            },
+			            "Object": {
+			              "Role": "vendor.vendor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vendors_have_vendors"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "vendor"
+			            },
+			            "Name": {
+			              "Role": "vendor.vendor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vendors_are_names_IDs_of_vendors"
+			        }
+			      ]
+			    },
+			    "vendor_has_vendor_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Vendor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vendor": {
+			          "Target": {
+			            "Entity": "vendor"
+			          }
+			        },
+			        "vendor.vendor_ID": {
+			          "Target": {
+			            "Entity": "vendor.vendor_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vendor"
+			            },
+			            "Object": {
+			              "Role": "vendor.vendor_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vendors_have_vendor_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "vendor"
+			            },
+			            "Name": {
+			              "Role": "vendor.vendor_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vendor_ID_are_names_IDs_of_vendors"
+			        }
+			      ]
+			    },
+			    "date_has_is_weekend": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.is_weekend": {
+			          "Target": {
+			            "Entity": "date.is_weekend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.is_weekend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_is_weekends"
+			        }
+			      ]
+			    },
+			    "date_has_week_of_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.week_of_year": {
+			          "Target": {
+			            "Entity": "date.week_of_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.week_of_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_week_of_year"
+			        }
+			      ]
+			    },
+			    "date_has_year_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year_quarter": {
+			          "Target": {
+			            "Entity": "date.year_quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year_quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_year_quarters"
+			        }
+			      ]
+			    },
+			    "date_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.quarter": {
+			          "Target": {
+			            "Entity": "date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_quarters"
+			        }
+			      ]
+			    },
+			    "date_has_day_of_week_short": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.day_of_week_short": {
+			          "Target": {
+			            "Entity": "date.day_of_week_short"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.day_of_week_short"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_day_of_week_short"
+			        }
+			      ]
+			    },
+			    "date_has_day_of_week": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.day_of_week": {
+			          "Target": {
+			            "Entity": "date.day_of_week"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.day_of_week"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_day_of_week"
+			        }
+			      ]
+			    },
+			    "date_has_day_of_week_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.day_of_week_number": {
+			          "Target": {
+			            "Entity": "date.day_of_week_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.day_of_week_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_day_of_week_number"
+			        }
+			      ]
+			    },
+			    "date_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.day": {
+			          "Target": {
+			            "Entity": "date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_days"
+			        }
+			      ]
+			    },
+			    "date_has_month_name_long": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month_name_long": {
+			          "Target": {
+			            "Entity": "date.month_name_long"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month_name_long"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_month_name_longs"
+			        }
+			      ]
+			    },
+			    "date_has_month_name_short": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month_name_short": {
+			          "Target": {
+			            "Entity": "date.month_name_short"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month_name_short"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_month_name_shorts"
+			        }
+			      ]
+			    },
+			    "date_has_year_month_short": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year_month_short": {
+			          "Target": {
+			            "Entity": "date.year_month_short"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year_month_short"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_year_month_shorts"
+			        }
+			      ]
+			    },
+			    "date_has_year_monthnumber": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year_monthnumber": {
+			          "Target": {
+			            "Entity": "date.year_monthnumber"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year_monthnumber"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_year_monthnumbers"
+			        }
+			      ]
+			    },
+			    "date_has_monthnumber": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.monthnumber": {
+			          "Target": {
+			            "Entity": "date.monthnumber"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.monthnumber"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_monthnumbers"
+			        }
+			      ]
+			    },
+			    "date_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year": {
+			          "Target": {
+			            "Entity": "date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_years"
+			        }
+			      ]
+			    },
+			    "date_has_date_as_integer": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date_as_integer": {
+			          "Target": {
+			            "Entity": "date.date_as_integer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date_as_integer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_as_integer"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Verbs": [
+			              {
+			                "date": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "as": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "date.date_as_integer"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "dates_date_as_date_as_integer"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Prepositions": [
+			              {
+			                "as": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "date.date_as_integer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_are_as_date_as_integer"
+			        }
+			      ]
+			    },
+			    "date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date": {
+			          "Target": {
+			            "Entity": "date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_dates"
+			        }
+			      ]
+			    },
+			    "plant_in_plant_location": {
+			      "Binding": {
+			        "ConceptualEntity": "Plant"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "plant": {
+			          "Target": {
+			            "Entity": "plant"
+			          }
+			        },
+			        "plant.plant_location": {
+			          "Target": {
+			            "Entity": "plant.plant_location"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "plant.plant_location"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "plant"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "plant.plant_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "plants_are_in_plant_locations"
+			        }
+			      ]
+			    },
+			    "downtime_cost_parameter_is_expensive3": {
+			      "Binding": {
+			        "ConceptualEntity": "Downtime Cost Parameter"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "downtime_cost_parameter": {
+			          "Target": {
+			            "Entity": "downtime_cost_parameter"
+			          }
+			        },
+			        "downtime_cost_parameter.downtime_cost": {
+			          "Target": {
+			            "Entity": "downtime_cost_parameter.downtime_cost"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "downtime_cost_parameter"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "downtime_cost_parameter.downtime_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "downtime_cost_indicates_how_expensive_downtime_cost_parameters_are"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "plant_parameter"
+			              "Role": "downtime_cost_parameter"
 			            },
 			            "Object": {
-			              "Role": "plant_parameter.plant_parameter"
+			              "Role": "downtime_cost_parameter.downtime_cost"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "plant_parameters_have_plant_parameters"
+			          "ID": "downtime_cost_parameters_have_downtime_costs"
 			        }
 			      ]
 			    },
@@ -10525,2169 +12413,141 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "downtime_cost_parameter_is_expensive": {
+			    "plant_parameter_is_named_plant_parameter": {
 			      "Binding": {
-			        "ConceptualEntity": "Downtime Cost Parameter"
+			        "ConceptualEntity": "Plant Parameter"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "downtime_cost_parameter": {
+			        "plant_parameter": {
 			          "Target": {
-			            "Entity": "downtime_cost_parameter"
+			            "Entity": "plant_parameter"
 			          }
 			        },
-			        "v_Calculations_calculation.MOM_growth_downtime_cost": {
+			        "plant_parameter.plant_parameter": {
 			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            "Entity": "plant_parameter.plant_parameter"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Adjective": {
+			          "Name": {
 			            "Subject": {
-			              "Role": "downtime_cost_parameter"
+			              "Role": "plant_parameter"
 			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            "Name": {
+			              "Role": "plant_parameter.plant_parameter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "MOM_growth_downtime_cost_indicates_how_expensive_downtime_cost_parameters_are"
+			          "ID": "plant_parameters_are_names_IDs_of_plant_parameters"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "downtime_cost_parameter"
+			              "Role": "plant_parameter"
 			            },
 			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			              "Role": "plant_parameter.plant_parameter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "downtime_cost_parameters_have_MOM_growth_downtime_cost"
+			          "ID": "plant_parameters_have_plant_parameters"
 			        }
 			      ]
 			    },
-			    "supplier_fact_is_expensive": {
+			    "vendor_parameter_is_named_vendor_parameter": {
 			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
+			        "ConceptualEntity": "Vendor Parameter"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "supplier_fact": {
+			        "vendor_parameter": {
 			          "Target": {
-			            "Entity": "supplier_fact"
+			            "Entity": "vendor_parameter"
 			          }
 			        },
-			        "v_Calculations_calculation.MOM_growth_downtime_cost": {
+			        "vendor_parameter.vendor_parameter": {
 			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            "Entity": "vendor_parameter.vendor_parameter"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Adjective": {
+			          "Name": {
 			            "Subject": {
-			              "Role": "supplier_fact"
+			              "Role": "vendor_parameter"
 			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			            "Name": {
+			              "Role": "vendor_parameter.vendor_parameter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "MOM_growth_downtime_cost_indicates_how_expensive_supplier_facts_are"
+			          "ID": "vendor_parameters_are_names_IDs_of_vendor_parameters"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "supplier_fact"
+			              "Role": "vendor_parameter"
 			            },
 			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_growth_downtime_cost"
+			              "Role": "vendor_parameter.vendor_parameter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_MOM_growth_downtime_cost"
+			          "ID": "vendor_parameters_have_vendor_parameters"
 			        }
 			      ]
 			    },
-			    "downtime_cost_parameter_is_expensive1": {
+			    "overview_parameter_is_named_overview_parameter": {
 			      "Binding": {
-			        "ConceptualEntity": "Downtime Cost Parameter"
+			        "ConceptualEntity": "Overview Parameter"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "downtime_cost_parameter": {
+			        "overview_parameter": {
 			          "Target": {
-			            "Entity": "downtime_cost_parameter"
+			            "Entity": "overview_parameter"
 			          }
 			        },
-			        "v_Calculations_calculation.downtime_cost_hr": {
+			        "overview_parameter.overview_parameter": {
 			          "Target": {
-			            "Entity": "v_Calculations_calculation.downtime_cost_hr"
+			            "Entity": "overview_parameter.overview_parameter"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Adjective": {
+			          "Name": {
 			            "Subject": {
-			              "Role": "downtime_cost_parameter"
+			              "Role": "overview_parameter"
 			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "v_Calculations_calculation.downtime_cost_hr"
+			            "Name": {
+			              "Role": "overview_parameter.overview_parameter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "downtime_cost_hr_indicates_how_expensive_downtime_cost_parameters_are"
+			          "ID": "overview_parameters_are_names_IDs_of_overview_parameters"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "downtime_cost_parameter"
+			              "Role": "overview_parameter"
 			            },
 			            "Object": {
-			              "Role": "v_Calculations_calculation.downtime_cost_hr"
+			              "Role": "overview_parameter.overview_parameter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "downtime_cost_parameters_have_downtime_cost_hr"
-			        }
-			      ]
-			    },
-			    "supplier_fact_is_expensive1": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.downtime_cost_hr": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.downtime_cost_hr"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "v_Calculations_calculation.downtime_cost_hr"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "downtime_cost_hr_indicates_how_expensive_supplier_facts_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.downtime_cost_hr"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_downtime_cost_hr"
-			        }
-			      ]
-			    },
-			    "downtime_cost_parameter_is_expensive2": {
-			      "Binding": {
-			        "ConceptualEntity": "Downtime Cost Parameter"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "downtime_cost_parameter": {
-			          "Target": {
-			            "Entity": "downtime_cost_parameter"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_growth_downtime_cost": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_growth_downtime_cost"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "downtime_cost_parameter"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "YOY_growth_downtime_cost_indicates_how_expensive_downtime_cost_parameters_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "downtime_cost_parameter"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "downtime_cost_parameters_have_YOY_growth_downtime_cost"
-			        }
-			      ]
-			    },
-			    "supplier_fact_is_expensive2": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_growth_downtime_cost": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_growth_downtime_cost"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "YOY_growth_downtime_cost_indicates_how_expensive_supplier_facts_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_growth_downtime_cost"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_YOY_growth_downtime_cost"
-			        }
-			      ]
-			    },
-			    "downtime_cost_parameter_is_expensive3": {
-			      "Binding": {
-			        "ConceptualEntity": "Downtime Cost Parameter"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "downtime_cost_parameter": {
-			          "Target": {
-			            "Entity": "downtime_cost_parameter"
-			          }
-			        },
-			        "downtime_cost_parameter.downtime_cost": {
-			          "Target": {
-			            "Entity": "downtime_cost_parameter.downtime_cost"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "downtime_cost_parameter"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "downtime_cost_parameter.downtime_cost"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "downtime_cost_indicates_how_expensive_downtime_cost_parameters_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "downtime_cost_parameter"
-			            },
-			            "Object": {
-			              "Role": "downtime_cost_parameter.downtime_cost"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "downtime_cost_parameters_have_downtime_costs"
-			        }
-			      ]
-			    },
-			    "date_dates_as_date_as_integer": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.date_as_integer": {
-			          "Target": {
-			            "Entity": "date.date_as_integer"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Verb": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Verbs": [
-			              {
-			                "date": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "PrepositionalPhrases": [
-			              {
-			                "Prepositions": [
-			                  {
-			                    "as": {
-			                      "State": "Generated"
-			                    }
-			                  }
-			                ],
-			                "Object": {
-			                  "Role": "date.date_as_integer"
-			                }
-			              }
-			            ]
-			          },
-			          "State": "Generated",
-			          "Weight": 0.95,
-			          "ID": "dates_date_as_date_as_integer"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.date_as_integer"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_as_integer"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Prepositions": [
-			              {
-			                "as": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "date.date_as_integer"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_are_as_date_as_integer"
-			        }
-			      ]
-			    },
-			    "plant_in_plant_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Plant"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "plant": {
-			          "Target": {
-			            "Entity": "plant"
-			          }
-			        },
-			        "plant.plant_location": {
-			          "Target": {
-			            "Entity": "plant.plant_location"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "plant.plant_location"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "plant"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "plant.plant_location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "plants_are_in_plant_locations"
-			        }
-			      ]
-			    },
-			    "date_has_date": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.date": {
-			          "Target": {
-			            "Entity": "date.date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_dates"
-			        }
-			      ]
-			    },
-			    "date_has_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.year": {
-			          "Target": {
-			            "Entity": "date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_years"
-			        }
-			      ]
-			    },
-			    "date_has_monthnumber": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.monthnumber": {
-			          "Target": {
-			            "Entity": "date.monthnumber"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.monthnumber"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_monthnumbers"
-			        }
-			      ]
-			    },
-			    "date_has_year_monthnumber": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.year_monthnumber": {
-			          "Target": {
-			            "Entity": "date.year_monthnumber"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.year_monthnumber"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_year_monthnumbers"
-			        }
-			      ]
-			    },
-			    "date_has_year_month_short": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.year_month_short": {
-			          "Target": {
-			            "Entity": "date.year_month_short"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.year_month_short"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_year_month_shorts"
-			        }
-			      ]
-			    },
-			    "date_has_month_name_short": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.month_name_short": {
-			          "Target": {
-			            "Entity": "date.month_name_short"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.month_name_short"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_month_name_shorts"
-			        }
-			      ]
-			    },
-			    "date_has_month_name_long": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.month_name_long": {
-			          "Target": {
-			            "Entity": "date.month_name_long"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.month_name_long"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_month_name_longs"
-			        }
-			      ]
-			    },
-			    "date_has_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.day": {
-			          "Target": {
-			            "Entity": "date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_days"
-			        }
-			      ]
-			    },
-			    "date_has_day_of_week_number": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.day_of_week_number": {
-			          "Target": {
-			            "Entity": "date.day_of_week_number"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.day_of_week_number"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_day_of_week_number"
-			        }
-			      ]
-			    },
-			    "date_has_day_of_week": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.day_of_week": {
-			          "Target": {
-			            "Entity": "date.day_of_week"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.day_of_week"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_day_of_week"
-			        }
-			      ]
-			    },
-			    "date_has_day_of_week_short": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.day_of_week_short": {
-			          "Target": {
-			            "Entity": "date.day_of_week_short"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.day_of_week_short"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_day_of_week_short"
-			        }
-			      ]
-			    },
-			    "date_has_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.quarter": {
-			          "Target": {
-			            "Entity": "date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_quarters"
-			        }
-			      ]
-			    },
-			    "date_has_year_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.year_quarter": {
-			          "Target": {
-			            "Entity": "date.year_quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.year_quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_year_quarters"
-			        }
-			      ]
-			    },
-			    "date_has_week_of_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.week_of_year": {
-			          "Target": {
-			            "Entity": "date.week_of_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.week_of_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_week_of_year"
-			        }
-			      ]
-			    },
-			    "date_has_is_weekend": {
-			      "Binding": {
-			        "ConceptualEntity": "Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "date": {
-			          "Target": {
-			            "Entity": "date"
-			          }
-			        },
-			        "date.is_weekend": {
-			          "Target": {
-			            "Entity": "date.is_weekend"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "date"
-			            },
-			            "Object": {
-			              "Role": "date.is_weekend"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_is_weekends"
-			        }
-			      ]
-			    },
-			    "plant_has_plant_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Plant"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "plant": {
-			          "Target": {
-			            "Entity": "plant"
-			          }
-			        },
-			        "plant.plant_location": {
-			          "Target": {
-			            "Entity": "plant.plant_location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "plant"
-			            },
-			            "Object": {
-			              "Role": "plant.plant_location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "plants_have_plant_locations"
-			        }
-			      ]
-			    },
-			    "material_type_has_material_ID": {
-			      "Binding": {
-			        "ConceptualEntity": "Material Type"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "material_type": {
-			          "Target": {
-			            "Entity": "material_type"
-			          }
-			        },
-			        "material_type.material_ID": {
-			          "Target": {
-			            "Entity": "material_type.material_ID"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "material_type"
-			            },
-			            "Object": {
-			              "Role": "material_type.material_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "material_types_have_material_ID"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_date": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "supplier_fact.date": {
-			          "Target": {
-			            "Entity": "supplier_fact.date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "supplier_fact.date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_dates"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_total_defect_qty": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "supplier_fact.total_defect_qty": {
-			          "Target": {
-			            "Entity": "supplier_fact.total_defect_qty"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "supplier_fact.total_defect_qty"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_defect_qties"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_total_downtime_minute": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "supplier_fact.total_downtime_minute": {
-			          "Target": {
-			            "Entity": "supplier_fact.total_downtime_minute"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "supplier_fact.total_downtime_minute"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_downtime_minutes"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_defect_qty": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_defect_qty": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_defect_qty"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_defect_qty"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_defect_qty"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_downtime_minute": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_downtime_minute": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_downtime_minute"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_downtime_minute"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_downtime_minute"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_defect_report": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_defect_report": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_defect_report"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_defect_report"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_defect_report"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_defect_qty_SPLY": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.defect_qty_SPLY": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.defect_qty_SPLY"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.defect_qty_SPLY"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_defect_qty_SPLY"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_defect_qty_PM": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_defect_qty_PM": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_defect_qty_PM"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_defect_qty_PM"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_defect_qty_PM"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_YOY_growth_defect_qty": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_growth_defect_qty": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_growth_defect_qty"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_growth_defect_qty"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_YOY_growth_defect_qty"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_downtime_hours_SPLY": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_downtime_hours_SPLY": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_downtime_hours_SPLY"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_downtime_hours_SPLY"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_downtime_hours_SPLY"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_downtime_hours": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_downtime_hours": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_downtime_hours"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_downtime_hours"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_downtime_hours"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_DownTime_hours_PM": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_DownTime_hours_PM": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_DownTime_hours_PM"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_DownTime_hours_PM"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_DownTime_hours_PM"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_YOY_growth_downtime_hours": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_growth_downtime_hours": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_growth_downtime_hours"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_growth_downtime_hours"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_YOY_growth_downtime_hours"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_MOM_growth_downtime_hours": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_growth_downtime_hours": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_growth_downtime_hours"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_growth_downtime_hours"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_MOM_growth_downtime_hours"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_MOM_defect_quantity_trend_icon": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_defect_quantity_trend_icon": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_defect_quantity_trend_icon"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_defect_quantity_trend_icon"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_MOM_defect_quantity_trend_icon"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_MOM_defect_quantity_trend_colour": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_defect_quantity_trend_colour": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_defect_quantity_trend_colour"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_defect_quantity_trend_colour"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_MOM_defect_quantity_trend_colour"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_YOY_defect_quantity_trend_icon": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_defect_quantity_trend_icon": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_defect_quantity_trend_icon"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_defect_quantity_trend_icon"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_YOY_defect_quantity_trend_icon"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_YOY_defect_quantity_trend_colour": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_defect_quantity_trend_colour": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_defect_quantity_trend_colour"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_defect_quantity_trend_colour"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_YOY_defect_quantity_trend_colour"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_MOM_downtime_hour_trend_icon": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_downtime_hour_trend_icon": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_downtime_hour_trend_icon"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_downtime_hour_trend_icon"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_MOM_downtime_hour_trend_icon"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_YOY_downtime_hours_trend_icon": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_downtime_hours_trend_icon": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_downtime_hours_trend_icon"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_downtime_hours_trend_icon"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_YOY_downtime_hours_trend_icon"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_MOM_downtime_hour_trend_colour": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_downtime_hour_trend_colour": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_downtime_hour_trend_colour"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_downtime_hour_trend_colour"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_MOM_downtime_hour_trend_colour"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_YOY_downtime_hour_trend_colour": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_downtime_hour_trend_colour": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_downtime_hour_trend_colour"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_downtime_hour_trend_colour"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_YOY_downtime_hour_trend_colour"
-			        }
-			      ]
-			    },
-			    "downtime_cost_parameter_has_v_Calculations_calculation_downtime_hour_SPLY": {
-			      "Binding": {
-			        "ConceptualEntity": "Downtime Cost Parameter"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "downtime_cost_parameter": {
-			          "Target": {
-			            "Entity": "downtime_cost_parameter"
-			          }
-			        },
-			        "v_Calculations_calculation.downtime_hour_SPLY": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.downtime_hour_SPLY"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "downtime_cost_parameter"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.downtime_hour_SPLY"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "downtime_cost_parameters_have_downtime_hour_SPLY"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_downtime_hour_SPLY": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.downtime_hour_SPLY": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.downtime_hour_SPLY"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.downtime_hour_SPLY"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_downtime_hour_SPLY"
-			        }
-			      ]
-			    },
-			    "downtime_cost_parameter_has_v_Calculations_calculation_total_downtime_cost_PM": {
-			      "Binding": {
-			        "ConceptualEntity": "Downtime Cost Parameter"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "downtime_cost_parameter": {
-			          "Target": {
-			            "Entity": "downtime_cost_parameter"
-			          }
-			        },
-			        "v_Calculations_calculation.total_downtime_cost_PM": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_downtime_cost_PM"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "downtime_cost_parameter"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_downtime_cost_PM"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "downtime_cost_parameters_have_total_downtime_cost_PM"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_total_downtime_cost_PM": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.total_downtime_cost_PM": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.total_downtime_cost_PM"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.total_downtime_cost_PM"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_total_downtime_cost_PM"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_MOM_growth_defect_qty": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_growth_defect_qty": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_growth_defect_qty"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_growth_defect_qty"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_MOM_growth_defect_qty"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_MOM_downtime_cost_trend_icon": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_downtime_cost_trend_icon": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_downtime_cost_trend_icon"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_downtime_cost_trend_icon"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_MOM_downtime_cost_trend_icon"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_MOM_downtime_cost_trend_colour": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.MOM_downtime_cost_trend_colour": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.MOM_downtime_cost_trend_colour"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.MOM_downtime_cost_trend_colour"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_MOM_downtime_cost_trend_colour"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_YOY_downtime_cost_trend_icon": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_downtime_cost_trend_icon": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_downtime_cost_trend_icon"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_downtime_cost_trend_icon"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_YOY_downtime_cost_trend_icon"
-			        }
-			      ]
-			    },
-			    "v_Calculations_calculation_has_YOY_downtime_cost_trend_colour": {
-			      "Binding": {
-			        "ConceptualEntity": "_Calculations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "v_Calculations_calculation": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation"
-			          }
-			        },
-			        "v_Calculations_calculation.YOY_downtime_cost_trend_colour": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.YOY_downtime_cost_trend_colour"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "v_Calculations_calculation"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.YOY_downtime_cost_trend_colour"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_calculations_have_YOY_downtime_cost_trend_colour"
-			        }
-			      ]
-			    },
-			    "supplier_fact_has_v_Calculations_calculation_impact_defect_type": {
-			      "Binding": {
-			        "ConceptualEntity": "Supplier Fact"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "supplier_fact": {
-			          "Target": {
-			            "Entity": "supplier_fact"
-			          }
-			        },
-			        "v_Calculations_calculation.impact_defect_type": {
-			          "Target": {
-			            "Entity": "v_Calculations_calculation.impact_defect_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "supplier_fact"
-			            },
-			            "Object": {
-			              "Role": "v_Calculations_calculation.impact_defect_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "supplier_facts_have_impact_defect_type"
+			          "ID": "overview_parameters_have_overview_parameters"
 			        }
 			      ]
 			    },
